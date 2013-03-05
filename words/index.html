@@ -1,0 +1,36 @@
+---
+layout: default
+title: Words
+---
+
+<body id="words">
+
+  <div class="container-fluid">
+
+    <header class="masthead">
+      <div class="row-fluid">
+        <div class="span12 centered">
+          <h1 class="masthead-title">Words <span class="ss-icon masthead-icon">&#x1F4D3;</span></h1>
+        </div>
+      </div><!-- /.row-fluid -->
+    </header>
+
+    <div class="post-list">
+
+      {% for post in site.posts %}
+        <article itemscope itemtype="http://schema.org/Article">
+          <div class="row-fluid">
+            <div class="span6 offset3 post">
+              <h2 class="post-title" itemprop="name"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+
+    </div><!-- /.post-list-->
+
+    <hr class="middot">
+
+    {% include footer-navigation.html %}
+
+  </div><!-- /.container-fluid -->

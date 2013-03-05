@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<body id="words">
+
+  <div class="container-fluid">
+
+      <article itemscope itemtype="http://schema.org/Article">
+        <div class="row-fluid">
+          <div class="span6 offset3 post">
+            <time class="post-date"></time>
+            <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+
+            <hr class="light">
+
+            <div class="post-body" itemprop="articleBody">
+              {{ content | markdownify }}
+            </div>
+            <footer class="post-footer">
+              <p>{{ page.footer }}</p>
+            </footer>
+          </div>
+        </div>
+      </article>
+
+      <hr class="middot">
+
+      {% include footer-navigation.html %}
+
+  </div><!-- /.container-fluid -->
