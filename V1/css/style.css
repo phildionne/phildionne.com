@@ -1,0 +1,24 @@
+body { line-height: 1px; }
+
+.container { margin: 10em 0em 0em 10em; }
+
+::selection { background: #0088cc; color: #F5F5F5; text-shadow: 1px 1px #333; }
+
+h2 { margin-bottom: 18px; }
+h3 { margin-top: 18px; }
+
+ul { list-style-type: square; list-style-position: outside; margin-left: 16px; }
+li { margin-bottom: 9px; }
+
+#dash {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1px;
+	margin-bottom: 2em;
+}
+
+footer { color: #C5C5C5; margin-top: 4.6em; padding: 1em 0 2em; border-top: 1px solid #C5C5C5; }
+
+	@media (min-width: 768px) and (max-width: 980px) {
+/* 		.span5 { width: 600px; } */
+	}
