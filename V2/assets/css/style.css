@@ -1,0 +1,215 @@
+/*!
+ * phildionne.com
+ *
+ * Copyright 2012 Philippe Dionne
+ * Designed and built in Quebec City, Canada.
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F5F5F5;
+}
+body#sounds {
+  background-color: #111111;
+}
+::selection {
+  background-color: #fada7a;
+  color: #333333;
+}
+#sounds ::selection {
+  background-color: #fada7a;
+  color: #333333;
+}
+a {
+  color: #fa7a7a;
+}
+a:hover {
+  color: #fada7a;
+  text-decoration: none;
+}
+.centered {
+  text-align: center;
+}
+.btn-link {
+  color: #fa7a7a;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+}
+.btn-link:hover {
+  color: #fada7a;
+  text-decoration: none;
+}
+.jumbo,
+.tron,
+.huge {
+  margin: 0;
+  letter-spacing: -1px;
+}
+.jumbo {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 84px;
+  font-weight: bold;
+  line-height: 1.115;
+}
+.tron {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 1.115;
+}
+.huge {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.115;
+}
+#frontpage #lang {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#frontpage #hero {
+  margin-top: 12.76595744680851%;
+}
+#sounds hr.middot {
+  width: 10px;
+  height: 10px;
+  margin: 6.382978723404255% auto;
+  background-color: #999999;
+  border-top: 0;
+  border-bottom: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+#sounds header {
+  padding-top: 12.76595744680851%;
+  padding-bottom: 19.148936170212764%;
+  color: #333333;
+}
+#sounds .mix {
+  color: #555555;
+}
+#sounds .mix .mixmedia a:hover img {
+  opacity: 0.4;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+#sounds .mix .mixname {
+  margin-bottom: 40px;
+}
+#sounds .mix .mixlist {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+#sounds .mix .mixlist li {
+  margin: 10px 0;
+}
+#error404 #hero {
+  margin-top: 12.76595744680851%;
+}
+#symbolset {
+  margin-left: 20px;
+  font-size: 42px;
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  #frontpage .span8 {
+    width: 77.15998589396966%;
+  }
+  #sounds .mix .span2 {
+    width: 21.658634066063243%;
+    margin-left: 17.12707182320442%;
+  }
+  #sounds .mix .span4 {
+    width: 45.44492770659457%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .jumbo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.115;
+  }
+  .tron {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.115;
+  }
+  .huge {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.115;
+  }
+  #sounds .mix .mixmedia,
+  #sounds .mix .mixname {
+    text-align: center;
+  }
+  #sounds .mix .mixmedia {
+    margin-bottom: 20px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .jumbo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.115;
+  }
+  .tron {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.115;
+  }
+  .huge {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.115;
+  }
+  #sounds hr.middot {
+    margin: 60px auto;
+  }
+  #symbolset {
+    margin-left: 10px;
+    font-size: 28px;
+  }
+}

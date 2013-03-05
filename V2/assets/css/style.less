@@ -1,0 +1,179 @@
+/*!
+ * phildionne.com
+ *
+ * Copyright 2012 Philippe Dionne
+ * Designed and built in Quebec City, Canada.
+ */
+
+// Bootstrap & App variables
+// -------------------------
+@import "less/variables.less";
+@import "less/mixins.less";
+
+
+//
+// Variables
+// --------------------------------------------------
+
+@coral:                     #fa7a7a;
+@canari:          spin(@coral, 45%);
+
+//
+// General
+// --------------------------------------------------
+
+body { background-color: #F5F5F5; }
+body#sounds { background-color: #111111; }
+
+::selection { background-color: @canari; color: @grayDark; }
+#sounds ::selection { background-color: @canari; color: @grayDark; }
+
+a {
+  color: @coral;
+  &:hover {
+    color: @canari;
+    text-decoration: none;
+  }
+}
+
+.centered { text-align: center; }
+.btn-link {
+  color: @coral;
+  text-shadow: 0 0 0 rgba(0,0,0,.25);
+  &:hover {
+    color: @canari;
+    text-decoration: none;
+  }
+}
+
+
+//
+// Fonts
+// --------------------------------------------------
+
+.jumbo, .tron, .huge { margin: 0; letter-spacing: -1px; }
+.jumbo { #font > .sans-serif(@size: @baseFontSize*6, @weight: bold, @lineHeight: 1.115); }
+.tron { #font > .sans-serif(@size: @baseFontSize*4, @weight: bold, @lineHeight: 1.115); }
+.huge { #font > .sans-serif(@size: @baseFontSize*3, @weight: bold, @lineHeight: 1.115); }
+
+
+//
+// Scaffolding
+// --------------------------------------------------
+
+#frontpage {
+  #lang {
+    position: absolute;
+    top: @baseLineHeight;
+    right: @baseLineHeight;
+  }
+  #hero {
+    margin-top: @fluidGridColumnWidth*2;
+  }
+}
+
+#sounds {
+  hr.middot {
+    width: @baseLineHeight/2;
+    height: @baseLineHeight/2;
+    margin: @fluidGridColumnWidth auto;
+    background-color: @grayLight;
+    border-top: 0;
+    border-bottom: 0;
+    .border-radius(@baseLineHeight/4);
+  }
+  header {
+    padding-top: @fluidGridColumnWidth*2;
+    padding-bottom: @fluidGridColumnWidth*3;
+    color: @grayDark;
+  }
+  .mix {
+    color: @gray;
+    .mixmedia {
+      a {
+        &:hover {
+          img { opacity: 0.4; .transition(opacity 0.2s); }
+        }
+      }
+    }
+    .mixname {
+      margin-bottom: @baseLineHeight*2;
+    }
+    .mixlist {
+      #font > .serif(@size: 16px, @weight: normal, @lineHeight: 1.5);
+      li {
+        margin: @baseLineHeight/2 0;
+      }
+    }
+  }
+}
+
+#error404 {
+  #hero {
+    margin-top: @fluidGridColumnWidth*2;
+  }
+}
+
+//
+// Gimmicks
+// --------------------------------------------------
+
+#symbolset {
+  margin-left: @baseLineHeight;
+  font-size: @baseFontSize*3;
+}
+
+
+//
+// Responsive
+// --------------------------------------------------
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  #frontpage {
+    .span8 {
+            width: (@fluidGridColumnWidth768 * 10) + (@fluidGridGutterWidth * (10 - 1)); //.span11
+          }
+        }
+        #sounds {
+          .mix {
+            .span2 {
+                width: (@fluidGridColumnWidth768 * 3) + (@fluidGridGutterWidth * (3 - 1)); //.span3
+                margin-left: (@fluidGridColumnWidth768 * 2) + (@fluidGridGutterWidth768 * (2 - 1)) + (@fluidGridGutterWidth768); //.offset2
+              }
+              .span4 {
+                width: (@fluidGridColumnWidth768 * 6) + (@fluidGridGutterWidth * (6 - 1)); //.span6
+              }
+            }
+          }
+        }
+
+        /* Landscape phone to portrait tablet */
+        @media (max-width: 767px) {
+          .jumbo { #font > .sans-serif(@size: @baseFontSize*5, @weight: bold, @lineHeight: 1.115); }
+          .tron { #font > .sans-serif(@size: @baseFontSize*3, @weight: bold, @lineHeight: 1.115); }
+          .huge { #font > .sans-serif(@size: @baseFontSize*3, @weight: bold, @lineHeight: 1.115); }
+          #sounds {
+            .mix {
+              .mixmedia, .mixname { text-align: center; }
+              .mixmedia { margin-bottom: @baseLineHeight; }
+            }
+          }
+        }
+
+        /* Landscape phones and down */
+        @media (max-width: 480px) {
+          .jumbo { #font > .sans-serif(@size: @baseFontSize*4, @weight: bold, @lineHeight: 1.115); }
+          .tron { #font > .sans-serif(@size: @baseFontSize*3, @weight: bold, @lineHeight: 1.115); }
+          .huge { #font > .sans-serif(@size: @baseFontSize*2, @weight: bold, @lineHeight: 1.115); }
+          #sounds {
+            hr.middot { margin: @baseLineHeight*3 auto; }
+          }
+          #symbolset {
+            margin-left: @baseLineHeight/2;
+            font-size: @baseFontSize*2;
+          }
+        }
