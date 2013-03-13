@@ -368,6 +368,10 @@ hr.light {
     line-height: 1.7;
   }
 }
+.post .post-body img {
+  min-width: 100%;
+  margin: 20px auto;
+}
 .post .post-body p {
   margin: 20px 0;
 }
@@ -400,6 +404,9 @@ hr.light {
   line-height: 1.115;
   margin: 0;
   letter-spacing: -1px;
+}
+.post-list .category-morocco .post .post-title a {
+  color: #08c;
 }
 #error #message {
   padding-top: 12.76595744680851%;

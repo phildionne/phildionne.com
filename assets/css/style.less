@@ -213,6 +213,10 @@ hr.light {
       padding-right: @fluidGridGutterWidth*4;
       #font > .serif(@size: 19px, @weight: normal, @lineHeight: 1.7);
     }
+    img {
+      min-width: 100%;
+      margin: @gridGutterWidth auto;
+    }
     p {
       margin: @baseLineHeight 0;
       &:first-child { #font > .serif(@size: 24px, @weight: normal, @lineHeight: 1.5); }
@@ -235,6 +239,13 @@ hr.light {
       padding-bottom: @fluidGridGutterWidth;
       text-align: left;
       #type > .big;
+    }
+  }
+  .category-morocco {
+    .post {
+      .post-title {
+        a { color: #08c; }
+      }
     }
   }
 }
