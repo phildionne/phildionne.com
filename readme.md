@@ -1,6 +1,5 @@
-# Getting started
+# Words
+A collection of articles about living in Morocco and learning to fly.
 
-```
-$ jekyll --server
-```
-And go to [localhot:4000](http://localhost:4000)
+# Sounds
+A curated selection of songs delivered monthly.
