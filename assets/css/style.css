@@ -381,6 +381,9 @@ hr.light {
   font-weight: normal;
   line-height: 1.5;
 }
+.post .post-body li {
+  line-height: 1.4;
+}
 .post .post-footer {
   padding-top: 2.127659574468085%;
   border-top: 1px solid rgba(153, 153, 153, 0.5);
