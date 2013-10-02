@@ -254,6 +254,26 @@ hr.light {
 }
 
 
+// Projects
+// --------------------------------------------------
+
+.project-list {
+  .project {
+    border-top: 1px solid fadeout(@grayLight, 50%);
+    text-align: center;
+    padding-bottom: @fluidGridGutterWidth / 2;
+    .transition(margin 0.2s);
+    .project-title {
+      margin-left: @baseLineHeight !important;
+      padding-top: @fluidGridGutterWidth;
+      padding-bottom: @fluidGridGutterWidth / 2;
+      #type > .big;
+    }
+  }
+}
+
+
+
 // Error
 // --------------------------------------------------
 

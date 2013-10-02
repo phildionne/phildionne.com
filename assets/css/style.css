@@ -411,6 +411,26 @@ hr.light {
 .post-list .category-morocco .post .post-title a {
   color: #08c;
 }
+.project-list .project {
+  border-top: 1px solid rgba(153, 153, 153, 0.5);
+  text-align: center;
+  padding-bottom: 1.0638297872340425%;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+.project-list .project .project-title {
+  margin-left: 20px !important;
+  padding-top: 2.127659574468085%;
+  padding-bottom: 1.0638297872340425%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.115;
+  margin: 0;
+  letter-spacing: -1px;
+}
 #error #message {
   padding-top: 12.76595744680851%;
   text-align: center;
