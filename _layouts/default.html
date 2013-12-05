@@ -1,81 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-<head>
-  <meta charset="utf-8">
-  <title>
-    Philippe Dionne
-    {% if page.title %}
-    - {{ page.title }}
-    {% endif %}
-  </title>
-  <meta name="description" content="A 24 years old french Canadian with a passion for aesthetics & technology striving for a higher purpose">
-  <meta name="author" content="@phildionne">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+      Philippe Dionne
+      {% if page.title %}
+      - {{ page.title }}
+      {% endif %}
+    </title>
 
-  <meta property="og:title" content="Philippe Dionne" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://phildionne.com/" />
-  <meta property="og:description" content="A 24 years old french Canadian with a passion for aesthetics & technology striving for a higher purpose" />
-  <meta property="og:image" content="{{ site.url }}/apple-touch-icon-144x144-precomposed.png" />
+    <meta name="author" content="@phildionne">
+    <meta name="description" content="A 24 years old french Canadian with a passion for aesthetics & technology striving for a higher purpose">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <meta property="og:title" content="Philippe Dionne" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://phildionne.com/" />
+    <meta property="og:description" content="A 24 years old french Canadian with a passion for aesthetics & technology striving for a higher purpose" />
+    <meta property="og:image" content="{{ site.url }}/apple-touch-icon-144x144-precomposed.png" />
 
-  <link href="{{ site.url }}/assets/css/bootstrap.css" rel="stylesheet">
-  <link href="{{ site.url }}/assets/css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700' rel='stylesheet' type='text/css'>
-  <link href="{{ site.url }}/assets/webfonts/ss-standard.css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet">
 
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/apple-touch-icon-144x144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/apple-touch-icon-114x114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/apple-touch-icon-72x72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/apple-touch-icon-57x57-precomposed.png">
-</head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  </head>
+  <body id="{{ page.body_id }}">
 
-  {{ content }}
+    {{ content }}
 
-  {% if page.title == 'Sounds' %}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script>
-    <script src="{{ site.root }}/assets/js/jquery.localScroll.min.js"></script>
-    <script type="text/javascript">
-    jQuery(function( $ ){
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-      $.localScroll.hash({
-          target: '#sounds', // Could be a selector or a jQuery object too.
-          queue:true,
-          duration:200
-        });
-
-      $('.sounds-navigation').localScroll({
-          target: '#sounds', // could be a selector or a jQuery object too.
-          queue:true,
-          duration:200,
-          hash:true,
-          onBefore:function( e, anchor, $target ){
-            // The 'this' is the settings object, can be modified
-          },
-          onAfter:function( anchor, settings ){
-            // The 'this' contains the scrolled element (#sounds)
-          }
-        });
-    });
+    <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-11657486-3');ga('send','pageview');
     </script>
-  {% endif %}
-
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-11657486-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  </script>
-
-</body>
+  </body>
 </html>

@@ -3,6 +3,7 @@ layout: post
 category: morocco
 title: "La vie sur le campus"
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
+body_id: words
 ---
 
 Dès mon arrivée au Maroc, j'ai été rapidement confronté aux différences culturelles. En lisant les prochaines lignes, il faut garder en tête qu'ici le temps est une denrée abondante. Si ce n'est pas aujourd'hui, ce sera demain Incha'Allah (si Dieu le veut).

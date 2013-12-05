@@ -3,6 +3,7 @@ layout: post
 category: morocco
 title: "Marrakech la nuit"
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
+body_id: words
 ---
 
 Après la première semaine de cours, le Bureau des Étudiants de l'ISCAE a décidé d'organiser une fin de semaine d'intégration à Marrakech. Ce sont donc deux autocars pleins à craquer de jeunes fébriles qui partent en direction de la ville la plus "ouverte" du Maroc. Attention, c'est ici que les contradictions commencent.

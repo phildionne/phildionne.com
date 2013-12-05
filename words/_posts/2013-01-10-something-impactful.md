@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Something impactful"
+year: 2012
 footer: "Thanks to Florence Dion-Morin, Maxime Lavigueur, Anthony Verge and Greg Sadetsky for reading drafts of this."
+body_id: words
 ---
 
 Looking back on the past year, I realize how long a journey it has been. I'm now somewhere I would never have expected to be and it feels incredibly great. This is about how it all happened.

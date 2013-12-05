@@ -1,439 +1,163 @@
-/*!
- * phildionne.com
- *
- * Copyright 2013 Philippe Dionne
- * Designed and built in Quebec City, Canada.
- *
- */
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.clearfix:after {
-  clear: both;
-}
-.hide-text {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-.input-block-level {
-  display: block;
-  width: 100%;
-  min-height: 30px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-a:hover {
-  text-decoration: none;
-}
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700);
 a.self {
   color: #7dcbcb;
 }
-a.self:hover {
-  color: #7db7cb;
+a.sounds {
+  color: #fa7a7a;
 }
-.centered {
+a.words {
+  color: #fa7a7a;
+}
+a.projects {
+  color: #fa7a7a;
+}
+a:hover,
+a:focus {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.navigation {
+  margin-bottom: 90px;
+  padding: 0;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation li:after {
+  content: "/";
+  display: inline-block;
+  margin: 0 15px;
+  color: rgba(44, 47, 49, 0.9);
+}
+.navigation li:last-child:after {
+  content: "";
+  margin: 0;
+}
+.section-title {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 180px;
+}
+.section-title .title {
+  font-size: 72px;
+}
+#home {
+  background-color: #f1f1ed;
+}
+.presentation {
+  margin-top: 120px;
+}
+.presentation .lead-copy {
+  margin-bottom: 60px;
+  font-size: 49px;
+  font-weight: bold;
+  line-height: 1.1428571432;
+  letter-spacing: -1px;
+}
+.presentation .links {
+  padding: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+.presentation .links li {
+  display: inline-block;
+}
+#words {
+  background-color: #f1f1ed;
+}
+.article-list {
+  margin-bottom: 90px;
+}
+.article-list .article .year {
+  margin-top: 25px;
+}
+.article-page .article {
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+.article-page .article .year {
+  display: block;
   text-align: center;
 }
-hr {
-  border-top: 1px solid rgba(153, 153, 153, 0.5);
-  border-bottom: 0;
+.article-page .article .title {
+  margin-bottom: 90px;
+  text-align: center;
+  font-weight: bold;
 }
-hr.middot {
-  width: 10px;
-  height: 10px;
-  margin: 6.382978723404255% auto;
-  background-color: #999999;
-  border-top: 0;
-  border-bottom: 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-transition: margin 0.2s;
-  -moz-transition: margin 0.2s;
-  -o-transition: margin 0.2s;
-  transition: margin 0.2s;
+.article-page .article .body {
+  font-family: 'Gentium Book Basic', "Times New Roman", Times, serif;
+  font-size: 21px;
+  line-height: 40px;
 }
-@media (max-width: 767px) {
-  hr.middot {
-    margin: 12.76595744680851% auto;
-  }
+.article-page .article .body p {
+  margin-bottom: 36px;
 }
-hr.light {
-  width: 6.382978723404255%;
-  height: 1px;
-  margin: 6.382978723404255% auto;
-  background-color: rgba(153, 153, 153, 0.5);
-  border-top: 0;
-  border-bottom: 0;
+.article-page .article .body img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#projects {
+  background-color: #f1f1ed;
+}
+.project-list {
+  margin-bottom: 90px;
+}
+.project-list .project .description {
+  font-size: 16.8px;
 }
 #sounds {
   background-color: #111111;
-  padding-bottom: 6.382978723404255%;
 }
-#words {
-  padding-bottom: 6.382978723404255%;
+.mix-list a:hover,
+.mix-list a:focus {
+  text-decoration: none;
 }
-#projects {
-  padding-bottom: 6.382978723404255%;
+.mix-list .mix {
+  color: #444444;
+  padding-bottom: 30px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
-#two-thousand-twelve,
-#two-thousand-thirteen {
-  padding-top: 3.1914893617021276%;
-}
-.footer-navigation {
-  text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
-  -webkit-transition: font-size 0.2s;
-  -moz-transition: font-size 0.2s;
-  -o-transition: font-size 0.2s;
-  transition: font-size 0.2s;
-}
-@media (max-width: 480px) {
-  .footer-navigation {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 1.115;
-    margin: 0;
-    letter-spacing: -1px;
-  }
-}
-.footer-navigation .navigation-element {
-  display: inline-block;
-  margin-left: 10px;
-}
-.footer-navigation .navigation-element:after {
-  content: "/";
-  display: inline-block;
-  margin-left: 20px;
-}
-.footer-navigation .navigation-element:last-child:after {
+.mix-list .mix:after {
   content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  background-color: #999999;
+  border-radius: 4px;
 }
-.sounds-navigation {
+.mix-list .mix .media {
   text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
-  -webkit-transition: font-size 0.2s;
-  -moz-transition: font-size 0.2s;
-  -o-transition: font-size 0.2s;
-  transition: font-size 0.2s;
-  padding-bottom: 19.148936170212764%;
 }
-@media (max-width: 480px) {
-  .sounds-navigation {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 1.115;
-    margin: 0;
-    letter-spacing: -1px;
-  }
+.mix-list .mix .media img:hover,
+.mix-list .mix .media img:focus {
+  opacity: 0.5;
 }
-.sounds-navigation .navigation-element {
-  display: inline-block;
-  margin-left: 10px;
-}
-.sounds-navigation .navigation-element:after {
-  content: "/";
-  display: inline-block;
-  margin-left: 20px;
-}
-.sounds-navigation .navigation-element:last-child:after {
-  content: "";
-}
-.sounds-navigation a {
-  font-family: 'Gentium Book Basic', "Times New Roman", Times, serif;
-  font-size: 28px;
-  font-weight: normal;
-  line-height: 1.115;
-  font-style: italic;
-}
-#frontpage #presentation {
-  padding-top: 12.76595744680851%;
-  padding-bottom: 6.382978723404255%;
-}
-#frontpage #presentation .lead-text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 56px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  #frontpage #presentation .lead-text {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 42px;
-    font-weight: bold;
-    line-height: 1.115;
-    margin: 0;
-    letter-spacing: -1px;
-  }
-}
-@media (max-width: 767px) {
-  #frontpage #presentation .lead-text {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 1.115;
-    margin: 0;
-    letter-spacing: -1px;
-  }
-}
-#frontpage #presentation .links {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  #frontpage #presentation .links {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 1.115;
-    margin: 0;
-    letter-spacing: -1px;
-  }
-}
-@media (max-width: 767px) {
-  #frontpage #presentation .links {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 1.115;
-    margin: 0;
-    letter-spacing: -1px;
-  }
-}
-.masthead {
-  padding-top: 6.382978723404255%;
-  padding-bottom: 12.76595744680851%;
-}
-@media (max-width: 767px) {
-  .masthead {
-    padding-top: 12.76595744680851%;
-    padding-bottom: 25.53191489361702%;
-    -webkit-transition: padding 0.2s;
-    -moz-transition: padding 0.2s;
-    -o-transition: padding 0.2s;
-    transition: padding 0.2s;
-  }
-}
-.masthead .masthead-title {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 84px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
-}
-@media (max-width: 767px) {
-  .masthead .masthead-title {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 56px;
-    font-weight: bold;
-    line-height: 1.115;
-    margin: 0;
-    letter-spacing: -1px;
-  }
-}
-.masthead .masthead-title .masthead-icon {
-  margin-left: 20px;
-  font-size: 56px;
-}
-@media (max-width: 767px) {
-  .masthead .masthead-title .masthead-icon {
-    margin-left: 10px;
-    font-size: 42px;
-    -webkit-transition: font-size 0.2s;
-    -moz-transition: font-size 0.2s;
-    -o-transition: font-size 0.2s;
-    transition: font-size 0.2s;
-  }
-}
-.mix {
-  color: #555555;
-}
-@media (max-width: 767px) {
-  .mix {
-    text-align: center;
-  }
-}
-.mix .mix-title {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
+.mix-list .mix .title {
+  font-size: 36px;
+  padding-left: 1em;
   margin-bottom: 40px;
+  margin-top: 0;
 }
-@media (max-width: 767px) {
-  .mix .mix-title {
-    margin-top: 20px;
-  }
-}
-.mix .mix-media a:hover img {
-  opacity: 0.4;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-.mix .mix-element-list {
+.mix-list .mix .track-list {
   font-family: 'Gentium Book Basic', "Times New Roman", Times, serif;
+  margin-bottom: 0;
+}
+.mix-list .mix .track-list li {
   font-size: 18px;
-  font-weight: normal;
-  line-height: 1.5;
+  line-height: 28.57142858px;
 }
-.mix .mix-element-list .mix-element {
-  margin: 10px 0;
-}
-@media (max-width: 767px) {
-  .mix .mix-element-list .mix-element {
-    list-style-type: none;
-  }
-}
-.post .post-title {
-  padding-top: 25.53191489361702%;
+.year-spacer {
+  font-size: 36px;
   text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 56px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
-}
-@media (max-width: 767px) {
-  .post .post-title {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 42px;
-    font-weight: bold;
-    line-height: 1.115;
-    margin: 0;
-    letter-spacing: -1px;
-  }
-}
-.post .post-body {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-bottom: 8.51063829787234%;
-  font-family: 'Gentium Book Basic', "Times New Roman", Times, serif;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.5;
-  color: #222222;
-}
-@media (min-width: 1600px) {
-  .post .post-body {
-    padding-left: 12.76595744680851%;
-    padding-right: 12.76595744680851%;
-  }
-}
-@media (min-width: 1200px) {
-  .post .post-body {
-    padding-left: 4.25531914893617%;
-    padding-right: 4.25531914893617%;
-  }
-}
-@media (max-width: 767px) {
-  .post .post-body {
-    padding-left: 8.51063829787234%;
-    padding-right: 8.51063829787234%;
-    font-family: 'Gentium Book Basic', "Times New Roman", Times, serif;
-    font-size: 19px;
-    font-weight: normal;
-    line-height: 1.7;
-  }
-}
-.post .post-body img {
-  min-width: 100%;
-  margin: 20px auto;
-}
-.post .post-body p {
-  margin: 20px 0;
-}
-.post .post-body p:first-child {
-  font-family: 'Gentium Book Basic', "Times New Roman", Times, serif;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 1.5;
-}
-.post .post-body li {
-  line-height: 1.4;
-}
-.post .post-footer {
-  padding-top: 2.127659574468085%;
-  border-top: 1px solid rgba(153, 153, 153, 0.5);
-  color: #999999;
-}
-.post-list .post {
-  border-top: 1px solid rgba(153, 153, 153, 0.5);
-  -webkit-transition: margin 0.2s;
-  -moz-transition: margin 0.2s;
-  -o-transition: margin 0.2s;
-  transition: margin 0.2s;
-}
-.post-list .post .post-title {
-  margin-left: 20px !important;
-  padding-top: 2.127659574468085%;
-  padding-bottom: 2.127659574468085%;
-  text-align: left;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
-}
-.post-list .category-morocco .post .post-title a {
-  color: #08c;
-}
-.project-list .project {
-  border-top: 1px solid rgba(153, 153, 153, 0.5);
-  text-align: center;
-  padding-bottom: 1.0638297872340425%;
-  -webkit-transition: margin 0.2s;
-  -moz-transition: margin 0.2s;
-  -o-transition: margin 0.2s;
-  transition: margin 0.2s;
-}
-.project-list .project .project-title {
-  margin-left: 20px !important;
-  padding-top: 2.127659574468085%;
-  padding-bottom: 1.0638297872340425%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  line-height: 1.115;
-  margin: 0;
-  letter-spacing: -1px;
-}
-#error #message {
-  padding-top: 12.76595744680851%;
-  text-align: center;
+  margin-bottom: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 1px solid #333;
 }

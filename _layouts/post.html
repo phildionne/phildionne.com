@@ -2,30 +2,29 @@
 layout: default
 ---
 
-<body id="words">
+<section class="article-page">
+  <div class="container">
 
-  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
 
-      <article class="category-{{ page.category }}" itemscope itemtype="http://schema.org/Article">
-        <div class="row-fluid">
-          <div class="span6 offset3 post">
-            <time class="post-date"></time>
-            <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+        <article class="article">
+          <time class="year">{{ page.date | date: "%B %-d, %Y" }}</time>
+          <h1 class="title">{{ page.title }}</h1>
 
-            <hr class="light">
-
-            <div class="post-body" itemprop="articleBody">
-              {{ content | markdownify }}
-            </div>
-            <footer class="post-footer">
-              <p>{{ page.footer }}</p>
-            </footer>
+          <div class="body">
+            {{ content | markdownify }}
           </div>
-        </div>
-      </article>
 
-      <hr class="middot">
+          <footer>
+            <p>{{ page.footer }}</p>
+          </footer>
+        </article>
 
-      {% include footer-navigation.html %}
+      </div>
+    </div>
 
-  </div><!-- /.container-fluid -->
+  </div>
+</section>
+
+{% include footer.html %}

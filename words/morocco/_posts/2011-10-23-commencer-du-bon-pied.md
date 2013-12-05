@@ -3,6 +3,7 @@ layout: post
 category: morocco
 title: "Commencer du bon pied"
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
+body_id: words
 ---
 
 Avant de commencer, il faut savoir qu'il y a environ une douzaine de fin de semaines pendant lesquelles je peux partir du campus et visiter le Maroc. Puisqu'il y a énormément de choses à voir, chaque occasion de partir doit être rentabilisée au maximum.

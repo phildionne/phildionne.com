@@ -3,6 +3,7 @@ layout: post
 category: morocco
 title: "Eid el kebeer"
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
+body_id: words
 ---
 
 Eid El Kebeer est une fête musulmane qui commémore la soumission d'Ibrahim à Dieu. Ce dernier aurait demandé à Ibrahim d'égorger son fils Ismaël pour tester sa foi. Voyant qu'il allait réellement le faire, Dieu lui aurait envoyé un mouton par l'entremise de l'archange Gabriel pour remplacer l'enfant. Depuis, les familles musulmanes commémorent cet événement en sacrifiant un mouton ou d'autres animaux, selon les budgets, et en l'égorgeant après la prière et le sermon de l'Eid.

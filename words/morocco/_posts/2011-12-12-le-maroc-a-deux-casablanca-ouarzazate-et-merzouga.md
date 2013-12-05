@@ -3,6 +3,7 @@ layout: post
 category: morocco
 title: "Le Maroc a deux: Casablanca, Ouarzazate et Merzouga"
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
+body_id: words
 ---
 
 Florence, ma copine, est venue me rejoindre au Maroc pendant sa semaine de relâche universitaire. Puisqu'on ne fait pas ce genre de voyage tous les jours, en plus de fêter un premier anniversaire en couple, nous avons décidé de mettre le paquet. Une semaine, six villes et 2700km plus tard, on s'est dit qu'on avait peut-être exagéré.

@@ -1,8 +1,10 @@
 ---
 layout: post
 category: morocco
+year: 2011
 title: "Le Rif, soupe de fèves et cannabis"
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
+body_id: words
 ---
 
 Suite à ma randonnée dans la région du Toubkal, je m'étais juré de réitérer l'expérience. Je suis donc parti dans le nord du Maroc en quête d'aventure et de bonne bouffe.

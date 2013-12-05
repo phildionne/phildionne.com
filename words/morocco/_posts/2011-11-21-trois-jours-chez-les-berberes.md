@@ -3,6 +3,7 @@ layout: post
 category: morocco
 title: "3 jours chez les berbères"
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
+body_id: words
 ---
 
 Casablanca, jeudi 13 octobre 18h21: la fin de semaine de 3 jours à Essaouira planifiée avec d'autres étudiants vient tout juste de tomber à l'eau. Changement de plan, je décide de partir seul dans le massif du Toubkal pour faire de la randonnée. Le temps de mettre quelques affaires dans mon sac et j'attrape le train de 19h30, direction Marrakech. Vers minuit, j'arrive dans un petit hôtel où je pose mes affaires pour ensuite aller manger dans la Médina puis me coucher. Avant d'entrer dans le vif du sujet, une petite mise en contexte s'impose. Il faut savoir que la région dans laquelle je m'aventure est différente des précédentes puisqu'elle est habitée par un peuple bien particulier: les berbères.

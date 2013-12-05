@@ -3,6 +3,7 @@ layout: post
 category: morocco
 title: "Les Berbères"
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
+body_id: words
 ---
 
 L'Afrique du Nord regroupe plusieurs ethnies autochtones que l'on désigne sous le nom de "Berbères" ou "Amazigh" dans leur langue. À une certaine époque, ils se nommaient Libyens, Maures, Gétules, Garamantes ou encore Numides. Ils occupaient un large territoire, allant de la vallée du Nil jusqu'à l'Atlantique en passant par le Sahara. Les berbères ont ensuite connu la conquête romaine, la christianisation, l'invasion vandale, la conquête arabe et finalement la conversion à l'islam. Maintenant, on retrouve des berbères dispersés à travers plusieurs pays, notamment le Maroc, l'Algérie, la Libye, la Tunisie et l'Égypte.¹
