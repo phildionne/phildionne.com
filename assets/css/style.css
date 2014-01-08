@@ -135,6 +135,9 @@ a:focus {
 .mix-list .mix .media {
   text-align: center;
 }
+.mix-list .mix .media img {
+  max-width: 100%;
+}
 .mix-list .mix .media img:hover,
 .mix-list .mix .media img:focus {
   opacity: 0.5;
