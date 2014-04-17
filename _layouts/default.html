@@ -16,14 +16,16 @@
     <meta name="author" content="@phildionne">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://phildionne.com{{ page.url }}" />
-
     {% if page.title %}
+      <meta property="og:type" content="article" />
       <meta property="og:title" content="{{ page.title }}" />
     {% else %}
+      <meta property="og:type" content="website" />
       <meta property="og:title" content="Philippe Dionne" />
     {% endif %}
+
+    <meta property="og:site_name" content="Philippe Dionne" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'/index.html','/' }}" />
 
     {% if page.description %}
       <meta property="og:description" content="{{ page.description }}" />
@@ -32,10 +34,12 @@
     {% endif %}
 
     {% if page.image %}
-      <meta property="og:image" content="{{ site.url }}/{{ page.image }}" />
+      <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
     {% else %}
       <meta property="og:image" content="{{ site.url }}/apple-touch-icon-144x144-precomposed.png" />
     {% endif %}
+
+    <meta property="article:published_time" content="{{page.date | date_to_xmlschema}}" />
 
     <link href="{{ site.url }}/assets/css/bootstrap.css" rel="stylesheet">
     <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet">
