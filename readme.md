@@ -1,5 +1,10 @@
-# Words
-A collection of articles about living in Morocco and learning to fly.
+# phildionne.com
 
-# Sounds
-A curated selection of songs delivered monthly.
+## Projects
+A list of ongoing projects
+
+## Words
+A collection of articles useful to help me remember what I've done in the past
+
+## Sounds
+A curated selection of songs, delivered monthly
