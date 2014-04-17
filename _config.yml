@@ -1,2 +1,3 @@
 url: http://phildionne.com
 permalink: /words/:title.html
+markdown: kramdown
