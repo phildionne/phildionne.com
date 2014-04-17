@@ -265,3 +265,52 @@ a {
     }
   }
 }
+
+
+
+// Spice mix
+// --------------------------------------------------
+
+#spices {
+  .section-title {
+    margin-bottom: @line-height-computed * 2;
+  }
+}
+
+.spice-mix {
+  .title {
+    margin-top: @line-height-computed * 2;
+    font-size: @font-size-large;
+    text-align: center;
+  }
+
+  .description {
+    font-family: @font-family-serif;
+    font-size: @font-size-base + 2px;
+    font-style: italic;
+    color: @gray;
+    text-align: center;
+    margin-bottom: @line-height-computed * 2;
+  }
+
+  .table {
+    color: @gray-light;
+    transition: color 0.1s;
+
+    &:hover {
+      color: @gray;
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    margin-top: @grid-gutter-width * 2;
+    margin-bottom: @grid-gutter-width * 6;
+    background-color: #999999;
+    border-radius: @border-radius-base;
+  }
+}

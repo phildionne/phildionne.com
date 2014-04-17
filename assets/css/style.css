@@ -195,3 +195,37 @@ a:focus {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+#spices .section-title {
+  margin-bottom: 40px;
+}
+.spice-mix .title {
+  margin-top: 40px;
+  font-size: 18px;
+  text-align: center;
+}
+.spice-mix .description {
+  font-family: 'Gentium Book Basic', "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #555555;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.spice-mix .table {
+  color: #999999;
+  transition: color 0.1s;
+}
+.spice-mix .table:hover {
+  color: #555555;
+}
+.spice-mix:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 180px;
+  background-color: #999999;
+  border-radius: 4px;
+}
