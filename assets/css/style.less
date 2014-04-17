@@ -158,10 +158,15 @@ a {
 }
 
 .project-list {
-  margin-bottom: @grid-gutter-width * 3;
+  margin-bottom: @line-height-computed * 3;
 
   .project {
-    .title {}
+    margin-bottom: @line-height-computed;
+
+    .title {
+      font-size: @font-size-h3;
+      margin-bottom: @line-height-computed / 2;
+    }
     .description {
       font-size: @font-size-base * 1.2;
     }

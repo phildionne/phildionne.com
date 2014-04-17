@@ -114,7 +114,14 @@ a:focus {
   background-color: #f1f1ed;
 }
 .project-list {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
+}
+.project-list .project {
+  margin-bottom: 20px;
+}
+.project-list .project .title {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 .project-list .project .description {
   font-size: 16.8px;
