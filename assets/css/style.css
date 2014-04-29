@@ -110,6 +110,14 @@ a:focus {
   width: 100%;
   margin-bottom: 40px;
 }
+.article-page .article .body ul {
+  margin-bottom: 40px;
+}
+.article-page .article .body hr {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-color: #b9b9a5;
+}
 #projects {
   background-color: #f1f1ed;
 }
