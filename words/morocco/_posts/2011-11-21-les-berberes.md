@@ -1,7 +1,7 @@
 ---
 layout: post
-category: morocco
 title: "Les Berbères"
+categories: morocco
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
 body_id: words
 ---

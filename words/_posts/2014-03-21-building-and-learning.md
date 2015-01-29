@@ -2,6 +2,7 @@
 layout: post
 title: "Building & Learning"
 year: 2013
+categories: personal
 footer: "Thanks to Florence Dion-Morin for reading drafts of this."
 body_id: words
 ---

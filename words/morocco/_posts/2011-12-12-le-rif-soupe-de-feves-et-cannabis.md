@@ -1,8 +1,8 @@
 ---
 layout: post
-category: morocco
 year: 2011
 title: "Le Rif, soupe de fèves et cannabis"
+categories: morocco
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."
 body_id: words
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "Something impactful"
 year: 2012
+categories: personal
 footer: "Thanks to Florence Dion-Morin, Maxime Lavigueur, Anthony Verge and Greg Sadetsky for reading drafts of this."
 body_id: words
 ---
