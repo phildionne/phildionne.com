@@ -1,5 +1,13 @@
-url: http://phildionne.com
+# Site settings
+title: Philippe Dionne
+email: dionne.phil@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  I’m Philippe Dionne, a 26 years old french Canadian with a passion for æsthetics & technology striving for a higher purpose. I work in Quebec city and chase my dreams everyday.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://phildionne.com" # the base hostname & protocol for your site
 permalink: /words/:title.html
+
+# Build settings
 markdown: kramdown
 
 sass:
