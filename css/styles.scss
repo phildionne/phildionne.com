@@ -1,7 +1,15 @@
-@import "style-variables.less";
-@import "bootstrap/mixins.less";
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
 
-@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700);
+@import
+  "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables",
+  "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins",
+  "_sass/_variables"
+;
+
+@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700");
 
 
 a {
@@ -21,10 +29,10 @@ a {
 // --------------------------------------------------
 
 .navigation {
-  margin-bottom: @grid-gutter-width * 3;
+  margin-bottom: $grid-gutter-width * 3;
   padding: 0;
   text-align: center;
-  font-size: @font-size-large * 1.5;
+  font-size: $font-size-large * 1.5;
   font-weight: bold;
 
   li {
@@ -33,8 +41,8 @@ a {
     &:after {
       content: "/";
       display: inline-block;
-      margin: 0 @grid-gutter-width/2;
-      color: fadeout(@text-color, 10%);
+      margin: 0 $grid-gutter-width/2;
+      color: fadeout($text-color, 10%);
     }
 
     &:last-child:after {
@@ -46,25 +54,25 @@ a {
 
 .section-navigation {
   text-align: center;
-  // margin-top: @grid-gutter-width * 2;
-  margin-bottom: @grid-gutter-width * 6;
+  // margin-top: $grid-gutter-width * 2;
+  margin-bottom: $grid-gutter-width * 6;
 
   li > a {
-    color: @gray;
+    color: $gray;
 
     &:hover, &:focus {
-      color: @gray-light;
+      color: $gray-light;
     }
   }
 }
 
 .section-title {
   text-align: center;
-  margin-top: @grid-gutter-width * 4;
-  margin-bottom: @grid-gutter-width * 6;
+  margin-top: $grid-gutter-width * 4;
+  margin-bottom: $grid-gutter-width * 6;
 
   .title {
-    font-size: @font-size-h1 * 2;
+    font-size: $font-size-h1 * 2;
   }
 }
 
@@ -77,19 +85,19 @@ a {
 }
 
 .presentation {
-  margin-top: @grid-gutter-width * 4;
+  margin-top: $grid-gutter-width * 4;
 
   .lead-copy {
-    margin-bottom: @line-height-computed * 3;
-    font-size: @font-size-base * 3.5;
+    margin-bottom: $line-height-computed * 3;
+    font-size: $font-size-base * 3.5;
     font-weight: bold;
-    line-height: @line-height-base * 0.80;
+    line-height: $line-height-base * 0.80;
     letter-spacing: -1px;
   }
 
   .links {
     padding: 0;
-    font-size: @font-size-base * 2;
+    font-size: $font-size-base * 2;
     font-weight: bold;
 
     li {
@@ -107,19 +115,19 @@ a {
 }
 
 .article-list {
-  margin-bottom: @grid-gutter-width * 3;
+  margin-bottom: $grid-gutter-width * 3;
 
   .article {
     .year {
-      margin-top: @line-height-computed + 5px
+      margin-top: $line-height-computed + 5px
     }
   }
 }
 
 .article-page {
   .article {
-    margin-top: @grid-gutter-width * 5;
-    margin-bottom: @grid-gutter-width * 3;
+    margin-top: $grid-gutter-width * 5;
+    margin-bottom: $grid-gutter-width * 3;
 
     .year {
       display: block;
@@ -127,32 +135,32 @@ a {
     }
 
     .title {
-      margin-bottom: @grid-gutter-width * 3;
+      margin-bottom: $grid-gutter-width * 3;
       text-align: center;
       font-weight: bold;
     }
 
     .body {
-      font-family: @font-family-serif;
-      font-size: @font-size-base * 1.5;
-      line-height: @line-height-computed * 2;
+      font-family: $font-family-serif;
+      font-size: $font-size-base * 1.5;
+      line-height: $line-height-computed * 2;
 
       p {
-        margin-bottom: @line-height-computed * 1.8;
+        margin-bottom: $line-height-computed * 1.8;
       }
 
       img {
         width: 100%;
-        margin-bottom: @line-height-computed * 2;
+        margin-bottom: $line-height-computed * 2;
       }
 
       ul {
-        margin-bottom: @line-height-computed * 2;
+        margin-bottom: $line-height-computed * 2;
       }
 
       hr {
-        margin-top: @line-height-computed * 3;
-        margin-bottom: @line-height-computed * 3;
+        margin-top: $line-height-computed * 3;
+        margin-bottom: $line-height-computed * 3;
         border-color: darken(#f1f1ed, 25%);
       }
     }
@@ -168,17 +176,17 @@ a {
 }
 
 .project-list {
-  margin-bottom: @line-height-computed * 3;
+  margin-bottom: $line-height-computed * 3;
 
   .project {
-    margin-bottom: @line-height-computed;
+    margin-bottom: $line-height-computed;
 
-    .title {
-      font-size: @font-size-h3;
-      margin-bottom: @line-height-computed / 2;
-    }
+    // .title {
+    //   font-size: $font-size-h3;
+    //   margin-bottom: $line-height-computed / 2;
+    // }
     .description {
-      font-size: @font-size-base * 1.2;
+      font-size: $font-size-base * 1.2;
     }
   }
 }
@@ -200,8 +208,8 @@ a {
 
   .mix {
     color: #444444;
-    padding-bottom: @grid-gutter-width;
-    .transition(all 0.2s);
+    padding-bottom: $grid-gutter-width;
+    @include transition(all 0.2s);
 
     &:after {
       content: "";
@@ -209,10 +217,10 @@ a {
       width: 10px;
       height: 10px;
       margin: 0 auto;
-      margin-top: @grid-gutter-width * 4;
-      margin-bottom: @grid-gutter-width * 4;
+      margin-top: $grid-gutter-width * 4;
+      margin-bottom: $grid-gutter-width * 4;
       background-color: #999999;
-      border-radius: @border-radius-base;
+      border-radius: $border-radius-base;
     }
 
     .media {
@@ -227,30 +235,30 @@ a {
     }
 
     .title {
-      font-size: @font-size-h1;
+      font-size: $font-size-h1;
       padding-left: 1em;
-      margin-bottom: @line-height-computed * 2px;
+      margin-bottom: $line-height-computed * 2;
       margin-top: 0;
     }
 
     .track-list {
-      font-family: @font-family-serif;
+      font-family: $font-family-serif;
       margin-bottom: 0;
 
       li {
-        font-size: @font-size-large;
-        line-height: @line-height-computed * @line-height-base;
+        font-size: $font-size-large;
+        line-height: $line-height-computed * $line-height-base;
       }
     }
   }
 }
 
 .year-spacer {
-  font-size: @font-size-h1;
+  font-size: $font-size-h1;
   text-align: center;
-  margin-bottom: @grid-gutter-width * 5;
-  padding-top: @grid-gutter-width;
-  padding-bottom: @grid-gutter-width;
+  margin-bottom: $grid-gutter-width * 5;
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
   border: 1px solid #333;
 }
 
@@ -264,14 +272,14 @@ a {
 }
 
 #work-content {
-  padding-bottom: @line-height-computed * 5;
+  padding-bottom: $line-height-computed * 5;
 
   ul {
-    font-size: @font-size-h4;
+    font-size: $font-size-h4;
 
     li {
-      padding-top: (@line-height-computed / 4);
-      padding-bottom: (@line-height-computed / 4);
+      padding-top: ($line-height-computed / 4);
+      padding-bottom: ($line-height-computed / 4);
     }
   }
 }
@@ -283,32 +291,32 @@ a {
 
 #spices {
   .section-title {
-    margin-bottom: @line-height-computed * 2;
+    margin-bottom: $line-height-computed * 2;
   }
 }
 
 .spice-mix {
   .title {
-    margin-top: @line-height-computed * 2;
-    font-size: @font-size-large;
+    margin-top: $line-height-computed * 2;
+    font-size: $font-size-large;
     text-align: center;
   }
 
   .description {
-    font-family: @font-family-serif;
-    font-size: @font-size-base + 2px;
+    font-family: $font-family-serif;
+    font-size: $font-size-base + 2px;
     font-style: italic;
-    color: @gray;
+    color: $gray;
     text-align: center;
-    margin-bottom: @line-height-computed * 2;
+    margin-bottom: $line-height-computed * 2;
   }
 
   .table {
-    color: @gray-light;
+    color: $gray-light;
     transition: color 0.1s;
 
     &:hover {
-      color: @gray;
+      color: $gray;
     }
   }
 
@@ -318,9 +326,9 @@ a {
     width: 10px;
     height: 10px;
     margin: 0 auto;
-    margin-top: @grid-gutter-width * 2;
-    margin-bottom: @grid-gutter-width * 6;
+    margin-top: $grid-gutter-width * 2;
+    margin-bottom: $grid-gutter-width * 6;
     background-color: #999999;
-    border-radius: @border-radius-base;
+    border-radius: $border-radius-base;
   }
 }

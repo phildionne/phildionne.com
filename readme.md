@@ -11,6 +11,11 @@ A curated selection of songs, delivered monthly
 
 --
 
+### Getting started
+
+`jekyll serve`
+
+
 ### Update dependencies
 
 `bower update`
