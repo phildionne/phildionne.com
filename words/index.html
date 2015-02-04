@@ -21,11 +21,17 @@ body_id: words
         <article class="article">
           <div class="row">
 
-            <div class="col-md-1 col-md-offset-2">
-              <h3 class="year">{{ post.year }}</h3>
-            </div>
+            {% if post.year %}
+              <div class="col-md-1 col-md-offset-2">
+                <h3 class="year">{{ post.year }}</h3>
+              </div>
+            {% endif %}
 
-            <div class="col-md-8">
+            {% if post.year %}
+              <div class="col-md-8">
+            {% else %}
+              <div class="col-md-8 col-md-offset-3">
+            {% endif %}
               <h2 class="title">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
               </h2>
