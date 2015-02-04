@@ -14,5 +14,4 @@ sass:
   style: :compressed
   sass_dir: /
 exclude:
-  - "bower_components"
-  - "bower.json"
+  - ".env"
