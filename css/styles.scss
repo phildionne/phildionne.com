@@ -12,19 +12,6 @@
 @import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700");
 
 
-a {
-  &.self     { color: #7dcbcb; }
-  &.sounds   { color: #fa7a7a; }
-  &.words    { color: #fa7a7a; }
-  &.projects { color: #fa7a7a; }
-
-  &:hover, &:focus {
-    opacity: 0.8;
-    text-decoration: none;
-  }
-}
-
-
 // Navigation
 // --------------------------------------------------
 
@@ -48,6 +35,24 @@ a {
     &:last-child:after {
       content: "";
       margin: 0;
+    }
+  }
+}
+
+.navigation-links {
+  padding: 0;
+  font-size: $font-size-base * 2;
+  font-weight: bold;
+
+  a {
+    &.self     { color: #7dcbcb; }
+    &.sounds   { color: #fa7a7a; }
+    &.words    { color: #fa7a7a; }
+    &.projects { color: #fa7a7a; }
+
+    &:hover, &:focus {
+      opacity: 0.8;
+      text-decoration: none;
     }
   }
 }
