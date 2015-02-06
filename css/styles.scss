@@ -29,7 +29,9 @@
       content: "/";
       display: inline-block;
       margin: 0 $grid-gutter-width/2;
-      color: fadeout($text-color, 10%);
+      color: fade-out($text-color, 0.1);
+
+      @media (max-width: $screen-sm-max) { margin: 0 $grid-gutter-width/4; }
     }
 
     &:last-child:after {
