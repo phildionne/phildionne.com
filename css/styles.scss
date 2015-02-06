@@ -103,6 +103,7 @@
 
 .presentation {
   margin-top: $grid-gutter-width * 4;
+  @media (max-width: $screen-sm-max) { margin-top: $grid-gutter-width * 2; }
 
   .lead-copy {
     margin-bottom: $line-height-computed * 3;
