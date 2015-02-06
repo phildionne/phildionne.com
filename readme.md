@@ -16,6 +16,11 @@ A curated selection of songs, delivered monthly
 `jekyll serve`
 
 
+### Deploy
+
+`jekyll build`
+`s3_website push`
+
 ### Update dependencies
 
 `bower update`
