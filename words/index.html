@@ -16,25 +16,25 @@ body_id: words
       </div>
     </div><!-- .section-title -->
 
-    <div class="article-list">
+    <div class="post-list">
       {% for post in site.posts %}
-        <article class="article">
+        <article class="post">
           <div class="row">
 
             {% if post.year %}
-              <div class="col-md-1 col-md-offset-2">
-                <h3 class="year">{{ post.year }}</h3>
+              <div class="col-md-1 col-md-offset-3">
+                <h3 class="post-year">{{ post.year }}</h3>
               </div>
             {% endif %}
 
             {% if post.year %}
               <div class="col-md-8">
             {% else %}
-              <div class="col-md-8 col-md-offset-3">
+              <div class="col-md-8 col-md-offset-4">
             {% endif %}
-              <h2 class="title">
+              <h3 class="post-title">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              </h2>
+              </h3>
             </div>
 
           </div>

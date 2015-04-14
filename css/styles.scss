@@ -6,9 +6,10 @@
 @import
   "bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
   "_sass/_variables",
+  "_sass/_post-body"
 ;
 
-@import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700");
+// @import url("http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700");
 
 
 // Navigation
@@ -64,7 +65,6 @@
 
 .section-navigation {
   text-align: center;
-  // margin-top: $grid-gutter-width * 2;
   margin-bottom: $grid-gutter-width * 6;
 
   li > a {
@@ -135,63 +135,64 @@
   background-color: #f1f1ed;
 }
 
-.article-list {
+.post-list {
   margin-bottom: $grid-gutter-width * 3;
 
-  .article {
-    .title {
-      @media (max-width: $screen-sm-max) { font-size: $font-size-h4; }
-    }
-    .year {
-      margin-top: $line-height-computed + 5px;
+  .post {}
 
-      @media (max-width: $screen-sm-max) {
-        margin-top: $line-height-computed + 15px;
-        font-size: $font-size-h4;
-      }
+  .post-title {
+    @media (max-width: $screen-sm-max) { font-size: $font-size-h4; }
+  }
+
+  .post-year {
+    @media (max-width: $screen-sm-max) {
+      margin-top: $line-height-computed + 15px;
+      font-size: $font-size-h4;
     }
   }
 }
 
-.article-page {
-  .article {
+.post-page {
+  .post {
     margin-top: $grid-gutter-width * 5;
     margin-bottom: $grid-gutter-width * 3;
+  }
 
-    .year {
-      display: block;
-      text-align: center;
+  .post-year {
+    display: block;
+    text-align: center;
+  }
+
+  .post-title {
+    margin-bottom: $grid-gutter-width * 3;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .post-body {
+    @include post-body($font-size-base * 1.3, $line-height-base * 1.3);
+
+    > p, > ul, > hr, > blockquote, > h1, > h2, > h3, > h4, > h5, > h6 {
+      margin-left: 15%;
+      margin-right: 15%;
     }
 
-    .title {
-      margin-bottom: $grid-gutter-width * 3;
-      text-align: center;
-      font-weight: bold;
+    .post-journal-notes {
+      margin-top: $line-height-computed * 4;
+      margin-bottom: $line-height-computed * 4;
+      padding: $line-height-computed;
+      border: 5px solid $blockquote-border-color;
+      background-color: lighten($blockquote-border-color, 50%);
+      text-align: justify;
     }
 
-    .body {
+    .post-lead {
+      margin-top: $line-height-computed * 4;
+      margin-bottom: $line-height-computed * 4;
       font-family: $font-family-serif;
-      font-size: $font-size-base * 1.5;
-      line-height: $line-height-computed * 2;
-
-      p {
-        margin-bottom: $line-height-computed * 1.8;
-      }
-
-      img {
-        width: 100%;
-        margin-bottom: $line-height-computed * 2;
-      }
-
-      ul {
-        margin-bottom: $line-height-computed * 2;
-      }
-
-      hr {
-        margin-top: $line-height-computed * 3;
-        margin-bottom: $line-height-computed * 3;
-        border-color: darken(#f1f1ed, 25%);
-      }
+      font-style: italic;
+      font-size: $font-size-h2;
+      text-align: center;
     }
   }
 }
@@ -209,14 +210,16 @@
 
   .project {
     margin-bottom: $line-height-computed;
+    @media (max-width: $screen-sm-max) { margin-bottom: $line-height-computed / 2; }
+  }
 
-    .title {
-      @media (max-width: $screen-sm-max) { font-size: $font-size-h4; }
-    }
+  .project-title {
+    @media (max-width: $screen-sm-max) { font-size: $font-size-h4; }
+  }
 
-    .description {
-      font-size: $font-size-base * 1.2;
-    }
+  .project-description {
+    font-size: $font-size-large;
+    @media (max-width: $screen-sm-max) { font-size: $font-size-base; }
   }
 }
 
@@ -238,7 +241,6 @@
   .mix {
     color: #444444;
     padding-bottom: $grid-gutter-width;
-    @include transition(all 0.2s);
 
     &:after {
       content: "";
@@ -256,40 +258,40 @@
         margin-bottom: $grid-gutter-width * 2;
       }
     }
+  }
 
-    .media {
+  .mix-media {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+
+      &:hover, &:focus {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .mix-title {
+    padding-left: 1em;
+    margin-bottom: $line-height-computed * 2;
+    margin-top: 0;
+
+    @media (max-width: $screen-sm-max) {
       text-align: center;
-
-      img {
-        max-width: 100%;
-        &:hover, &:focus {
-          opacity: 0.5;
-        }
-      }
+      margin-bottom: $line-height-computed;
+      margin-top: $line-height-computed * 2;
+      padding-left: 0;
     }
+  }
 
-    .title {
-      font-size: $font-size-h1;
-      padding-left: 1em;
-      margin-bottom: $line-height-computed * 2;
-      margin-top: 0;
+  .mix-tracks {
+    font-family: $font-family-serif;
+    margin-bottom: 0;
 
-      @media (max-width: $screen-sm-max) {
-        text-align: center;
-        margin-bottom: $line-height-computed;
-        margin-top: $line-height-computed * 2;
-        padding-left: 0;
-      }
-    }
-
-    .track-list {
-      font-family: $font-family-serif;
-      margin-bottom: 0;
-
-      li {
-        font-size: $font-size-large;
-        line-height: $line-height-computed * $line-height-base;
-      }
+    li {
+      font-size: $font-size-large;
+      line-height: $line-height-computed * $line-height-base;
     }
   }
 }

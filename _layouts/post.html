@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<section class="article-page">
+<section class="post-page">
   <div class="container">
 
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-12">
 
-        <article class="article">
-          <time class="year">{{ page.date | date: "%B %-d, %Y" }}</time>
-          <h1 class="title">{{ page.title }}</h1>
+        <article class="post">
+          <time class="post-year">{{ page.date | date: "%B %-d, %Y" }}</time>
+          <h1 class="post-title">{{ page.title }}</h1>
 
-          <div class="body">
+          <div class="post-body">
             {{ content | markdownify }}
           </div>
 
