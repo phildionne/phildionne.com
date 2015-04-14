@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vipassana: One breath at a time"
-year: 2014
+year:
 categories: personal
 footer: "Thanks to Yan Bussières for reading drafts of this."
 body_id: words
