@@ -1,5 +1,5 @@
 @mixin post-body($font-size-base, $line-height-base) {
-  $line-height-computed: floor(($font-size-base * $line-height-base));
+  $line-height-computed: floor(($font-size-base * $line-height-base) - 3);
   $blockquote-font-size: ($font-size-base * 1.25);
 
   font-size: $font-size-base;
