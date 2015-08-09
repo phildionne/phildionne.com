@@ -1,5 +1,6 @@
 ---
 layout: post
+active: true
 title: "Vipassana: One breath at a time"
 year:
 categories: personal

@@ -1,5 +1,6 @@
 ---
 layout: post
+active: true
 title: "Commencer du bon pied"
 categories: morocco
 footer: "Cet article fait partie d'une série de textes rédigés lors d'un séjour au Maroc en 2012."

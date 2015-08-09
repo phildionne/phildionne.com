@@ -1,5 +1,6 @@
 ---
 layout: post
+active: true
 title: "Building & Learning"
 year: 2013
 categories: personal

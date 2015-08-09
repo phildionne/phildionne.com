@@ -1,5 +1,6 @@
 ---
 layout: post
+active: true
 title: "Something impactful"
 year: 2012
 categories: personal

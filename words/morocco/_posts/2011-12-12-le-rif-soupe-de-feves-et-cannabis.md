@@ -1,5 +1,6 @@
 ---
 layout: post
+active: true
 year: 2011
 title: "Le Rif, soupe de fèves et cannabis"
 categories: morocco

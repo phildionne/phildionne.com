@@ -1,5 +1,6 @@
 ---
 layout: post
+active: true
 title: "La vie sur le campus"
 categories: morocco
 footer: "Cet article fait partie d'une série de
