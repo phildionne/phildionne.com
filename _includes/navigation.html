@@ -1,0 +1,19 @@
+<nav id="navigation">
+  <ul class="list-inline pull-right">
+    <li><a href="https://github.com/phildionne">GitHub</a></li>
+  </ul>
+  <ul class="list-inline">
+    <li {% if page.url == '/index.html' %} class="active"{% endif %}>
+      <a href="{{ site.baseurl }}/">About</a>
+    </li>
+    <li {% if page.url == '/words/index.html' %} class="active"{% endif %}>
+      <a href="{{ site.baseurl }}/words">Words</a>
+    </li>
+    <li {% if page.url == '/projects/index.html' %} class="active"{% endif %}>
+      <a href="{{ site.baseurl }}/projects">Projects</a>
+    </li>
+    <li {% if page.url == '/sounds/index.html' %} class="active"{% endif %}>
+      <a href="{{ site.baseurl }}/sounds">Sounds</a>
+    </li>
+  </ul>
+</nav>

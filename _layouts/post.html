@@ -2,29 +2,19 @@
 layout: default
 ---
 
-<section class="post-page">
-  <div class="container">
+<section>
 
-    <div class="row">
-      <div class="col-md-12">
+  <article class="single-post">
+    <time class="post-year">{{ page.date | date: "%B %-d, %Y" }}</time>
+    <h1 class="post-title">{{ page.title }}</h1>
 
-        <article class="post">
-          <time class="post-year">{{ page.date | date: "%B %-d, %Y" }}</time>
-          <h1 class="post-title">{{ page.title }}</h1>
-
-          <div class="post-body">
-            {{ content | markdownify }}
-          </div>
-
-          <footer class="post-footer">
-            <p>{{ page.footer }}</p>
-          </footer>
-        </article>
-
-      </div>
+    <div class="post-body">
+      {{ content | markdownify }}
     </div>
 
-  </div>
-</section>
+    <footer class="post-footer">
+      <p>{{ page.footer }}</p>
+    </footer>
+  </article>
 
-{% include footer.html %}
+</section>
