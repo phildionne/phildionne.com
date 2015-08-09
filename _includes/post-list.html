@@ -1,0 +1,30 @@
+<div class="post-list">
+  {% for post in site.posts %}
+    {% if post.year %}
+      <article class="post has-year">
+    {% else %}
+      <article class="post">
+    {% endif %}
+
+      <div class="row">
+
+        {% if post.year %}
+          <div class="col-xs-2">
+            <h3 class="post-year">{{ post.year }}</h3>
+          </div>
+        {% endif %}
+
+        {% if post.year %}
+          <div class="col-xs-10">
+        {% else %}
+          <div class="col-xs-8 col-xs-offset-2">
+        {% endif %}
+          <h3 class="post-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </h3>
+        </div>
+
+      </div>
+    </article>
+  {% endfor %}
+</div>

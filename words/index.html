@@ -6,43 +6,5 @@ body_id: words
 ---
 
 <section>
-  <div class="container">
-
-    <div class="section-title">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1 class="title">Words</h1>
-        </div>
-      </div>
-    </div><!-- .section-title -->
-
-    <div class="post-list">
-      {% for post in site.posts %}
-        <article class="post">
-          <div class="row">
-
-            {% if post.year %}
-              <div class="col-md-1 col-md-offset-3">
-                <h3 class="post-year">{{ post.year }}</h3>
-              </div>
-            {% endif %}
-
-            {% if post.year %}
-              <div class="col-md-8">
-            {% else %}
-              <div class="col-md-8 col-md-offset-4">
-            {% endif %}
-              <h3 class="post-title">
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-              </h3>
-            </div>
-
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-
-  </div>
+  {% include post-list.html %}
 </section>
-
-{% include footer.html %}

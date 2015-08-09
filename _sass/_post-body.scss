@@ -1,28 +1,13 @@
-@mixin post-body($font-size-base, $line-height-base) {
-  $line-height-computed: floor(($font-size-base * $line-height-base) - 3);
-  $blockquote-font-size: ($font-size-base * 1.25);
+@mixin post-body($post-font-size-base, $post-line-height-base) {
+  $post-line-height-computed: floor(($post-font-size-base * $post-line-height-base));
 
-  font-size: $font-size-base;
-  line-height: $line-height-computed;
-
-  p {
-    margin: 0 0 $line-height-computed;
-  }
-
-  ul,
-  ol {
-    margin-top: 0;
-    margin-bottom: ($line-height-computed / 2);
-    ul,
-    ol {
-      margin-bottom: 0;
-    }
-  }
+  font-size: $post-font-size-base;
+  line-height: $post-line-height-base;
+  font-weight: 300;
 
   hr {
-    margin-top: $line-height-computed * 3;
-    margin-bottom: $line-height-computed * 3;
-    border-top: 1px solid $gray;
+    margin-top: $post-line-height-computed * 3;
+    margin-bottom: $post-line-height-computed * 3;
   }
 
   // Hack
@@ -32,13 +17,14 @@
   }
 
   blockquote {
-    padding: ($line-height-computed / 2) ($line-height-computed / 2);
-    margin: 0 0 $line-height-computed;
+    padding: ($post-line-height-computed / 2) ($post-line-height-computed / 2);
+    margin: ($post-line-height-computed * 2) 0;
     font-size: $blockquote-font-size;
-    border-left: 5px solid $blockquote-border-color;
+    font-weight: 100;
+    border-left: 4px solid $blockquote-border-color;
 
     p {
-      margin-bottom: $line-height-computed / 2;
+      margin-bottom: $post-line-height-computed / 2;
     }
 
     p,
@@ -54,6 +40,7 @@
     .small {
       display: block;
       font-size: 80%; // back to default font-size
+      font-weight: 300;
       font-style: italic;
       line-height: $line-height-base;
       color: $blockquote-small-color;
@@ -65,14 +52,13 @@
   }
 
   figure {
-    margin-bottom: $line-height-computed;
+    margin-bottom: $post-line-height-computed;
 
     figcaption {
-      padding: ($line-height-computed / 4) ($line-height-computed / 2);
-      font-size: $font-size-small * 1.2;
-      line-height: $line-height-computed * 0.6;
-      color: $gray-lighter;
-      background-color: $gray-dark;
+      padding: ($line-height-computed / 2) $line-height-computed;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      background-color: hsl(215, 50%, 70%);
     }
 
     p { margin: 0; }
