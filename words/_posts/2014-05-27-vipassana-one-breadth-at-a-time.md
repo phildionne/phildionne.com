@@ -2,7 +2,7 @@
 layout: post
 active: true
 title: "Vipassana: One breath at a time"
-year:
+year: 2014
 categories: personal
 footer: "Thanks to Yan Bussières for reading drafts of this."
 body_id: words
