@@ -26,6 +26,7 @@ hr {
 #words {}
 #sounds {}
 #projects {}
+#work {}
 
 // Navigation
 #navigation {
@@ -222,4 +223,9 @@ hr {
     color: hsl(215, 50%, 95%);
     font-weight: 300;
   }
+}
+
+.work-list {
+  padding-top: $line-height-computed;
+  margin-top: $line-height-computed;  
 }
