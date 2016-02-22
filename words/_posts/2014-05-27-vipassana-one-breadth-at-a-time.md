@@ -2,10 +2,10 @@
 layout: post
 active: true
 title: "Vipassana: One breath at a time"
-year: 
+year:
 categories: personal
 footer: "Thanks to Yan Bussières for reading drafts of this."
-body_id: words
+body_id: post
 ---
 
 Recently I completed an introductory course to meditation by learning the _Vipassana_ technique and this is a short review of my experience.

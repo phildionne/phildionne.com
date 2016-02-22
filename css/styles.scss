@@ -7,8 +7,7 @@
 
 @import
   "_sass/_variables",
-  "bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
-  "_sass/_post-body"
+  "bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
 ;
 
 // Base
@@ -27,6 +26,8 @@ hr {
 #sounds {}
 #projects {}
 #work {}
+#post {}
+
 
 // Navigation
 #navigation {
@@ -55,6 +56,110 @@ hr {
     }
   }
 }
+
+#post {
+  #navigation {
+    li > a {
+      color: $gray-light;
+      &:hover { color: $gray-darker; }
+    }
+  }
+}
+
+
+// Page
+.page-container {}
+.page-content {}
+
+
+// Post
+.post-container {
+  background-color: #FFF;
+}
+
+.post-content {
+  padding-top: $grid-gutter-width * 2;
+  padding-bottom: $grid-gutter-width * 2;
+  color: $gray-dark;
+
+  .post-year {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .post-title {
+    margin-bottom: $grid-gutter-width * 3;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .post-body {
+//     @include post-body(16px, 26 / 18);
+    font-size: 16px;
+    line-height: 1.7;
+    // font-weight: 300;
+
+    a { color: $gray-dark; }
+
+    > p {
+      margin-bottom: $line-height-computed;
+
+      &:first-child {
+        font-size: 20px;
+        font-weight: 100;
+        margin-bottom: $line-height-computed * 2;
+      }
+    }
+
+    img {
+      // @include img-responsive;
+      margin: 0 0 $line-height-computed;
+    }
+
+    > hr {
+      margin-left: 40% !important;
+      margin-right: 40% !important;
+    }
+
+    figure {
+      margin-bottom: $line-height-computed;
+
+      figcaption {
+        padding: ($line-height-computed / 2) $line-height-computed;
+        font-size: $font-size-base;
+        line-height: $line-height-base;
+        background-color: $gray-lighter;
+      }
+
+      p { margin: 0; }
+      img { margin: 0; }
+    }
+
+    .post-journal-notes {
+      margin-top: $line-height-computed * 4;
+      margin-bottom: $line-height-computed * 4;
+      padding: $line-height-computed;
+      font-size: $font-size-h4;
+      font-weight: 100;
+      border: 4px solid $gray-lighter;
+      text-align: justify;
+    }
+  }
+
+  .post-footer {
+    margin-top: $line-height-computed * 4;
+    padding-top: 10px;
+    font-weight: 100;
+    border: 2px solid $gray-lighter;
+    text-align: center;
+    color: $gray-darker;
+  }
+}
+
+
+// Pages
+//****************************************
 
 // Home
 .about {
@@ -90,66 +195,6 @@ hr {
     font-size: $font-size-base + 2px; // 16px
   }
 }
-
-.single-post {
-  margin-top: $grid-gutter-width * 2;
-  margin-bottom: $grid-gutter-width * 2;
-
-  .post-year {
-    display: block;
-    text-align: center;
-    font-weight: 300;
-  }
-
-  .post-title {
-    margin-bottom: $grid-gutter-width * 3;
-    text-align: center;
-    font-weight: 500;
-  }
-
-  .post-body {
-    @include post-body(16px, 26 / 18);
-
-    > p {
-      &:first-child {
-        font-size: 20px;
-        font-weight: 100;
-        margin-bottom: $line-height-computed * 2;
-      }
-    }
-
-    .embeded {
-      margin-bottom: $line-height-computed;
-    }
-
-    .post-journal-notes {
-      margin-top: $line-height-computed * 4;
-      margin-bottom: $line-height-computed * 4;
-      padding: $line-height-computed;
-      font-size: $font-size-h4;
-      font-weight: 100;
-      border: 4px solid hsl(215, 50%, 70%);
-      text-align: justify;
-    }
-
-    .post-lead {
-      margin-top: $line-height-computed * 4;
-      margin-bottom: $line-height-computed * 4;
-      font-size: $font-size-h2;
-      font-weight: 100;
-      text-align: center;
-    }
-  }
-
-  .post-footer {
-    margin-top: $line-height-computed * 4;
-    padding-top: 10px;
-    font-weight: 100;
-    border: 2px solid hsl(215, 50%, 70%);
-    text-align: center;
-  }
-}
-
 
 // Projects
 .project-list {
@@ -225,7 +270,24 @@ hr {
   }
 }
 
+// Work
 .work-list {
   padding-top: $line-height-computed;
-  margin-top: $line-height-computed;  
+  margin-top: $line-height-computed;
+}
+
+
+
+// Components
+//****************************************
+
+// Bio
+.bio-container {}
+
+.bio {
+  position: fixed;
+  bottom: 0;
+  width: 16.66667%;
+  margin-bottom: $line-height-computed * 2;
+  padding-right: 30px;
 }

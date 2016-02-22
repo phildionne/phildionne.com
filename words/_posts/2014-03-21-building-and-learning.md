@@ -5,7 +5,7 @@ title: "Building & Learning"
 year: 2013
 categories: personal
 footer: "Thanks to Florence Dion-Morin for reading drafts of this."
-body_id: words
+body_id: post
 ---
 
 It has been a year full of discoveries and new experiences. Last year I've chose a very particular path and it has paid off multiple times in lots of different ways. My plans have evolved but I've mostly sticked to the essential.
