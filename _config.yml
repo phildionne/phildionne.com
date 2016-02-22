@@ -1,17 +1,34 @@
-# Site settings
-title: Philippe Dionne
-email: dionne.phil@gmail.com
+# Permalinks
+permalink:           pretty
+# permalink: /words/:title.html
+
+# Setup
+title:               Philippe Dionne
+tagline:             # The Jekyll Butler
 description: > # this means to ignore newlines until "baseurl:"
-  I’m Philippe Dionne, a 26 years old french Canadian with a passion for æsthetics & technology striving for a higher purpose. I work in Quebec city and chase my dreams everyday.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://phildionne.com" # the base hostname & protocol for your site
-permalink: /words/:title.html
+  I’m Philippe Dionne, a 27 years old french Canadian with a passion for æsthetics & technology striving for a higher purpose. I work in Quebec city and chase my dreams everyday.
+url:                 http://phildionne.com
+baseurl:             ""
+analytics_id:        "UA-11657486-3"
+  
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          /
+  style:            :compressed
+exclude:
+  - ".env"
 
 # Build settings
 markdown: kramdown
 
-sass:
-  style: :compressed
-  sass_dir: /
-exclude:
-  - ".env"
+  # About/contact
+author:
+  name:              Philippe Dionne
+  url:               https://twitter.com/phildionne
+  email:             dionne.phil@gmail.com
+
+# Gems
+gems:
+  - jekyll-gist
