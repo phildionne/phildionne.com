@@ -287,7 +287,7 @@ hr {
 .bio {
   position: fixed;
   bottom: 0;
-  width: 16.66667%;
+  max-width: 400px;
   margin-bottom: $line-height-computed * 2;
   padding-right: 30px;
 }
