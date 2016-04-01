@@ -22,5 +22,6 @@ Les marocains sont reconnus pour être chaleureux et hospitaliers. Je confirme q
 
 Je profite de chaque fin de semaine pour partir dans d'autres villes, d'ailleurs vous aurez plus de nouvelles à ce sujet prochainement. Il y a déjà deux semaines qui se sont écoulées depuis mon arrivée et j'espère qu'il ne me manquera pas de temps pour visiter tout ce qu'offre le Maroc.
 
-![](/assets/media/words/morroco/vie-campus/campus-1.jpg)
-![](/assets/media/words/morroco/vie-campus/campus-2.jpg)
+![](/assets/words/morroco/vie-campus/campus-1.jpg)
+![](/assets/words/morroco/vie-campus/campus-1.jpg)
+![](/assets/words/morroco/vie-campus/campus-2.jpg)

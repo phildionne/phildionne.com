@@ -23,8 +23,8 @@ Le lendemain, je fais mes adieux à mon hôte et pars pour Oualidia, une destina
 
 Ma première fin de semaine a donc été une réussite totale et j'espère pouvoir en dire autant de celles qui sont à venir. Toute bonne chose ayant une fin, j'ai passé la nuit suivante à faire de la fièvre, à vomir et à avoir la diarrhée.
 
-![](/assets/media/words/morroco/commencer-bon-pied/chenille.jpg)
-![](/assets/media/words/morroco/commencer-bon-pied/cite-portugaise.jpg)
-![](/assets/media/words/morroco/commencer-bon-pied/cote-oualidia.jpg)
-![](/assets/media/words/morroco/commencer-bon-pied/tajine-ingredients.jpg)
-![](/assets/media/words/morroco/commencer-bon-pied/tajine-khalid.jpg)
+![](/assets/words/morroco/commencer-bon-pied/chenille.jpg)
+![](/assets/words/morroco/commencer-bon-pied/cite-portugaise.jpg)
+![](/assets/words/morroco/commencer-bon-pied/cote-oualidia.jpg)
+![](/assets/words/morroco/commencer-bon-pied/tajine-ingredients.jpg)
+![](/assets/words/morroco/commencer-bon-pied/tajine-khalid.jpg)

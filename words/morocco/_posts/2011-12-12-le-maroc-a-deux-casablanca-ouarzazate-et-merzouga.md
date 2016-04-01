@@ -91,13 +91,13 @@ On se lève assez tôt, juste à temps pour observer le soleil qui se lève sur 
 
 On arrive vers 18h à Ouarzazate et de là, on doit se rendre à Marrakech dans la soirée si on veut respecter notre itinéraire. On décide de prendre un grand taxi (le genre de taxi qui ne part pas tant qu'il n'y a pas 4 personnes sur la banquette arrière et deux personnes sur le banc du passager en avant). Phil me dit que d'après son expérience, ça ne prend vraiment pas beaucoup de temps avant que ça se remplisse. Évidemment, 3 heures et quelques plaintes de ma part plus tard, nous voilà encore assis à côté du taxi à attendre qu'il se remplisse. (Énorme jinx de la part de ce cher philou!) Vers 22h, le taxi est finalement plein et nous quittons Ouarzazate en direction de Marrakech. Il faut traverser le Haut Atlas et la route est assez sinueuse, dans le genre un virage épingle à la minute. Le chauffeur se prend pour Schumacker et écoute la même chanson à tu-tête depuis le début du trajet. Le mélange de tous les éléments fait qu'à un moment donné Phil sort du taxi pour être malade. Le malaise passé, on reprend la route et on arrive enfin à Marrakech, trop fatigués pour être content d'être arrivé. Heureusement que Phil connaissait déjà la ville, nous sommes allés directement dans un petit hôtel de la médina.
 
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3700.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3707.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3715.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3736.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3759.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3774.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3795.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3864.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3908.jpg)
-![](/assets/media/words/morroco/casablanca-ouarzazate/IMG_3950.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3700.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3707.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3715.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3736.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3759.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3774.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3795.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3864.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3908.jpg)
+![](/assets/words/morroco/casablanca-ouarzazate/IMG_3950.jpg)

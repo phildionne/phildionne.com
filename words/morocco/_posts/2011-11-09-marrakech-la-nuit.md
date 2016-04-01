@@ -23,4 +23,4 @@ Le lendemain, nous allons dans un petit resto où nous mangeons un déjeuner tra
 
 C'était une belle fin de semaine, mais je ne peux m'empêcher de penser que la prochaine fois il faudra sortir des sentiers battus.
 
-![](/assets/media/words/morroco/marrakech/marrakech-rue.jpg)
+![](/assets/words/morroco/marrakech/marrakech-rue.jpg)

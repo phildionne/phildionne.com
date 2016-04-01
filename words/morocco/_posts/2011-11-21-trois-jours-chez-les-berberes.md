@@ -35,12 +35,12 @@ Ce chemin, moins populaire que l'ascension du Jebel Toubkal, vaut définitivemen
 
 Jusqu'à maintenant, c'est définitivement le point fort de mon voyage au Maroc et j'entends répéter l'expérience dans le nord. À suivre.
 
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3401.jpg)
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3409.jpg)
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3466.jpg)
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3495.jpg)
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3508.jpg)
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3513.jpg)
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3524.jpg)
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3535.jpg)
-![](/assets/media/words/morroco/trois-jours-berberes/IMG_3543.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3401.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3409.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3466.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3495.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3508.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3513.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3524.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3535.jpg)
+![](/assets/words/morroco/trois-jours-berberes/IMG_3543.jpg)
