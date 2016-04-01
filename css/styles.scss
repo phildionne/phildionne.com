@@ -113,7 +113,7 @@ hr {
     }
 
     img {
-      // @include img-responsive;
+      @include img-responsive;
       margin: 0 0 $line-height-computed;
     }
 
