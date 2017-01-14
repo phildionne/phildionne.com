@@ -5,17 +5,17 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,400,300,100);
 
-@import
-  "_sass/_variables",
-  "_sass/_utilities",
-  "bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
-;
+@import "_sass/_variables";
+@import "_sass/_utilities";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 // Base
 a {
   border-bottom: 2px solid hsl(215, 50%, 70%);
 
-  &:hover { border-color: hsl(45, 98%, 77%); }
+  &:hover {
+    border-color: hsl(45, 98%, 77%);
+  }
 }
 
 hr {
@@ -96,12 +96,12 @@ hr {
   }
 
   .post-body {
-//     @include post-body(16px, 26 / 18);
     font-size: 16px;
     line-height: 1.7;
-    // font-weight: 300;
 
-    a { color: $gray-dark; }
+    a {
+      color: $gray-dark;
+    }
 
     > p {
       margin-bottom: $line-height-computed;
