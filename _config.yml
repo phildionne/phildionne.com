@@ -27,7 +27,3 @@ author:
   name:              Philippe Dionne
   url:               https://twitter.com/phildionne
   email:             dionne.phil@gmail.com
-
-# Gems
-gems:
-  - jekyll-gist

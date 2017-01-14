@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'kramdown'
+gem 'kramdown', '~> 1.13'
 
-gem 'jekyll-gist'
-gem 'jekyll-watch'
+gem 'jekyll-watch', '~> 1.5'
