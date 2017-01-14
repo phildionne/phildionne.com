@@ -1,5 +1,5 @@
 # Permalinks
-permalink: /words/:title
+permalink: /words/:title.html
 
 # Setup
 title:               Philippe Dionne
