@@ -6,11 +6,11 @@ permalink:           pretty
 title:               Philippe Dionne
 tagline:             # The Jekyll Butler
 description: > # this means to ignore newlines until "baseurl:"
-  I’m Philippe Dionne, a 27 years old french Canadian with a passion for æsthetics & technology striving for a higher purpose. I work in Quebec city and chase my dreams everyday.
+  I’m Philippe Dionne, a 28 years old french Canadian with a passion for æsthetics & technology striving for a higher purpose. I work in Quebec city and chase my dreams everyday.
 url:                 http://phildionne.com
 baseurl:             ""
 analytics_id:        "UA-11657486-3"
-  
+
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
