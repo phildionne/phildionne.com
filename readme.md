@@ -18,8 +18,7 @@ A curated selection of songs, delivered monthly
 
 ### Deploy
 
-`jekyll build`
-`s3_website push`
+Deployed with [Netlify](https://netlify.com/)
 
 ### Update dependencies
 
