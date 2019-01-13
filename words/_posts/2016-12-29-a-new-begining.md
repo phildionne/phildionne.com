@@ -36,11 +36,11 @@ Here are some adventures that happened while building Dialog:
 
 - Rode the 12 hours [Adirondack train](https://www.amtrak.com/adirondack-train) to New-York twice to meet with [Betaworks](https://betaworks.com/) for their [botcamp](https://betaworks.com/botcamp/) program and to attend a bot meetup. Unfortunately, Dialog was not selected for botcamp but I learned a lot by being under the intense pressure of pitching a then vague idea.
 
-- Spent a month in Palo Alto and San Francisco to talk with potential users and feel the valley vibe. I've drunk enough [Blue Bottle](https://bluebottlecoffee.com/) and [Philz Coffee](http://www.philzcoffee.com/) for a lifetime.
+- Spent a month in Palo Alto and San Francisco to talk with potential users and feel the valley vibe. I've drunk enough [Blue Bottle](https://bluebottlecoffee.com/) and [Philz Coffee](https://www.philzcoffee.com/) for a lifetime.
 
 - Met with a Googler at the [Googleplex](https://en.wikipedia.org/wiki/Googleplex) to talk bots.
 
-- Hiked in the beautiful [Big Basin Redwoods State Park](http://www.parks.ca.gov/?page_id=540) with my brother.
+- Hiked in the beautiful [Big Basin Redwoods State Park](https://www.parks.ca.gov/?page_id=540) with my brother.
 
 - Attended Salesforce's [Dreamforce](https://www.salesforce.com/dreamforce/DF16/), and was blown away by the sheer size of the event.
 

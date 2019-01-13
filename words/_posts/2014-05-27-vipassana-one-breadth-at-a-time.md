@@ -18,9 +18,9 @@ In order to meditate seriously we concede to respect the following rules: no com
 
 
 ### Technique
-For the first 4 days we start practicing [Anapana](http://en.wikipedia.org/wiki/Anapanasati) to sharpen the mind. The technique consist in observing our breath and sensations on a triangle formed by the upper lip and the nose. At the beginning it is very hard not to be distracted by incoming thoughts but it gets easier each day. After just a few days you reach a point where almost nothing comes up wrecking your thoughts. It feels like your mind is left alone in the desert, calm and focused on one single thing.
+For the first 4 days we start practicing [Anapana](https://en.wikipedia.org/wiki/Anapanasati) to sharpen the mind. The technique consist in observing our breath and sensations on a triangle formed by the upper lip and the nose. At the beginning it is very hard not to be distracted by incoming thoughts but it gets easier each day. After just a few days you reach a point where almost nothing comes up wrecking your thoughts. It feels like your mind is left alone in the desert, calm and focused on one single thing.
 
-On the fourth day we start practicing the [Vipassana](http://en.wikipedia.org/wiki/Vipassanā) technique, which consist in scanning our body and observing our sensations. The whole process must be done with as much as possible objectivity (without judgment), something we call equanimity. Sitting for hours straight leads to some pain, sometimes almost unbearable. In these cases, it is a great opportunity to remain equanimous toward the pain and avoid to develop abortion. After a few days most students can feel pleasant subtle sensations on the whole body, sometimes described as an electric current or vibrations. Again, this is a great opportunity to remain equanimous and avoid to develop craving.
+On the fourth day we start practicing the [Vipassana](https://en.wikipedia.org/wiki/Vipassanā) technique, which consist in scanning our body and observing our sensations. The whole process must be done with as much as possible objectivity (without judgment), something we call equanimity. Sitting for hours straight leads to some pain, sometimes almost unbearable. In these cases, it is a great opportunity to remain equanimous toward the pain and avoid to develop abortion. After a few days most students can feel pleasant subtle sensations on the whole body, sometimes described as an electric current or vibrations. Again, this is a great opportunity to remain equanimous and avoid to develop craving.
 
 
 ### How it works
@@ -63,7 +63,7 @@ Yes, with a lot of work _Vipassana_ can get you there and way beyond.
 
 
 ### Meditation center
-I went to Quebec's [Montebello center](http://www.suttama.dhamma.org/) which is an old private college surrounded by forest. The installations are gorgeous and very convenient. Everything is clean and well organized. Rooms are simple yet very comfortable and food is absolutely delicious.
+I went to Quebec's [Montebello center](https://www.suttama.dhamma.org/) which is an old private college surrounded by forest. The installations are gorgeous and very convenient. Everything is clean and well organized. Rooms are simple yet very comfortable and food is absolutely delicious.
 
 
 ### Going further
