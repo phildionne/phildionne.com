@@ -19,7 +19,3 @@ A curated selection of songs, delivered monthly
 ### Deploy
 
 Deployed with [Netlify](https://netlify.com/)
-
-### Update dependencies
-
-`bower update`
