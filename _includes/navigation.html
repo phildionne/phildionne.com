@@ -1,17 +1,14 @@
-<nav id="navigation">
-  <ul class="list-inline pull-right">
-    <li><a href="https://github.com/phildionne">GitHub</a></li>
-    <li><a href="https://twitter.com/phildionne">Twitter</a></li>
-  </ul>
-  <ul class="list-inline">
-    <li {% if page.url == '/index.html' %} class="active"{% endif %}>
-      <a href="{{ site.baseurl }}/">About</a>
-    </li>
-    <li {% if page.url == '/words/index.html' %} class="active"{% endif %}>
-      <a href="{{ site.baseurl }}/words">Words</a>
-    </li>
-    <li {% if page.url == '/projects/index.html' %} class="active"{% endif %}>
-      <a href="{{ site.baseurl }}/projects">Projects</a>
-    </li>
-  </ul>
-</nav>
+<header id="header">
+  <div class="d-flex justify-content-between" id="navigation">
+    <nav class="nav">
+      <a href="{{ site.baseurl }}/" class="nav-link">About</a>
+      <a href="{{ site.baseurl }}/words" class="nav-link">Words</a>
+      <a href="{{ site.baseurl }}/projects" class="nav-link">Projects</a>
+    </nav>
+
+    <nav class="nav">
+      <a href="https://github.com/phildionne" class="nav-link">GitHub</a>
+      <a href="https://twitter.com/phildionne" class="nav-link">Twitter</a>
+    </nav>
+  </div>
+</header>

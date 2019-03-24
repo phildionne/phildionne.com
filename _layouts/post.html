@@ -3,42 +3,25 @@ layout: default
 body_id: post
 ---
 
-<div class="container-fluid">
+<div class="container-fluid bg-white">
   <div class="row">
-    <div class="col-lg-3 col-md-3 hidden-xs bio-container">
-      <div class="bio col-lg-3 col-md-3">
-        <h4>Philippe Dionne</h4>
-        <p>I’m a french Canadian with a passion for &aelig;sthetics & technology striving for a higher purpose.</p>
-        <p>I work in Quebec city and chase my dreams everyday.</p>
-        <p>Currently building <a href="https://stamped.ai">Stamped</a>, a modern audit firm for small and medium entities.</p>
-      </div>
-    </div>
+    <div class="col-lg-6 offset-lg-3">
+      {% include navigation.html %}
 
-    <div class="col-lg-9 col-md-9 col-xs-12 post-container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-lg-offset-1 col-md-offset-1 col-xs-offset-1">
-          {% include header.html %}
+      <section>
+        <article class="post-content">
+          <time class="post-year">{{ page.date | date: "%B %-d, %Y" }}</time>
+          <h1 class="post-title">{{ page.title }}</h1>
 
-          <section>
+          <div class="post-body">
+            {{ content | markdownify }}
+          </div>
 
-            <article class="post-content">
-              <time class="post-year">{{ page.date | date: "%B %-d, %Y" }}</time>
-              <h1 class="post-title">{{ page.title }}</h1>
-
-              <div class="post-body">
-                {{ content | markdownify }}
-              </div>
-
-              <footer class="post-footer">
-                <p>{{ page.footer }}</p>
-              </footer>
-            </article>
-
-          </section>
-
-        </div>
-      </div>
-
+          <footer class="post-footer">
+            {{ page.footer }}
+          </footer>
+        </article>
+      </section>
     </div>
   </div>
 </div>

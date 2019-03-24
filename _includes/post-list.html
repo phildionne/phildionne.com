@@ -1,4 +1,4 @@
-<div class="post-list m-b-lg">
+<section class="my-5">
   {% for post in site.posts %}
     {% if post.active %}
       {% if post.year %}
@@ -10,15 +10,15 @@
         <div class="row">
 
           {% if post.year %}
-            <div class="col-xs-2">
+            <div class="col-3">
               <h3 class="post-year">{{ post.year }}</h3>
             </div>
           {% endif %}
 
           {% if post.year %}
-            <div class="col-xs-10">
+            <div class="col-9">
           {% else %}
-            <div class="col-xs-8 col-xs-offset-2">
+            <div class="col-9 offset-3">
           {% endif %}
             <h3 class="post-title">
               <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -29,4 +29,4 @@
       </article>
     {% endif %}
   {% endfor %}
-</div>
+</section>
