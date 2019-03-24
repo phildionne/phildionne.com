@@ -1,13 +1,8 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-@charset "utf-8";
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:500,400,300,100);
-
-@import "_sass/_variables";
-@import "_sass/_utilities";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap";
 
 // Base
 a {
@@ -32,12 +27,12 @@ hr {
 
 // Navigation
 #navigation {
-  padding-top: $navbar-padding-vertical;
-  padding-bottom: $navbar-padding-vertical;
-  margin-top: $navbar-margin-bottom;
-  margin-bottom: $navbar-margin-bottom;
+  padding-top: $navbar-padding-y;
+  padding-bottom: $navbar-padding-y;
+  margin-top: $navbar-padding-x;
+  margin-bottom: $navbar-padding-x;
 
-  li {
+  .nav {
     > a {
       display: inline-block;
       color: hsl(215, 50%, 70%);
@@ -48,10 +43,8 @@ hr {
         border-color: hsl(45, 98%, 77%);
       }
     }
-  }
 
-  .active {
-    a {
+    a.active {
       color: $link-color;
       border-color: hsl(45, 98%, 77%);
     }
@@ -60,33 +53,25 @@ hr {
 
 #post {
   #navigation {
-    li > a {
-      color: $gray-light;
-      &:hover { color: $gray-darker; }
+    .nav > a {
+      color: $gray-600;
+      &:hover { color: $gray-800; }
     }
   }
 }
 
 
-// Page
-.page-container {}
-.page-content {}
-
-
 // Post
-.post-container {
-  background-color: #FFF;
-}
 
 .post-content {
   padding-top: $grid-gutter-width * 2;
   padding-bottom: $grid-gutter-width * 2;
-  color: $gray-dark;
+  color: $gray-700;
 
   .post-year {
     display: block;
     text-align: center;
-    font-weight: 300;
+    font-weight: $font-weight-light;
   }
 
   .post-title {
@@ -100,22 +85,22 @@ hr {
     line-height: 1.7;
 
     a {
-      color: $gray-dark;
+      color: $gray-700;
     }
 
     > p {
-      margin-bottom: $line-height-computed;
+      margin-bottom: $spacer * 1.5;
 
       &:first-child {
         font-size: 20px;
         font-weight: 100;
-        margin-bottom: $line-height-computed * 2;
+        margin-bottom: $spacer * 3;
       }
     }
 
     img {
-      @include img-responsive;
-      margin: 0 0 $line-height-computed;
+      @include img-fluid;
+      margin: 0 0 $spacer * 1.5;
     }
 
     > hr {
@@ -124,13 +109,13 @@ hr {
     }
 
     figure {
-      margin-bottom: $line-height-computed;
+      margin-bottom: $spacer * 1.5;
 
       figcaption {
-        padding: ($line-height-computed / 2) $line-height-computed;
+        padding: ($spacer * .75) ($spacer * 1.5);
         font-size: $font-size-base;
-        line-height: $line-height-base;
-        background-color: $gray-lighter;
+        line-height: $spacer * 1.5;
+        background-color: $gray-100;
       }
 
       p { margin: 0; }
@@ -138,23 +123,23 @@ hr {
     }
 
     .post-journal-notes {
-      margin-top: $line-height-computed * 4;
-      margin-bottom: $line-height-computed * 4;
-      padding: $line-height-computed;
-      font-size: $font-size-h4;
+      margin-top: $spacer * 6;
+      margin-bottom: $spacer * 6;
+      padding: $spacer * 1.5;
+      font-size: $h4-font-size;
       font-weight: 100;
-      border: 4px solid $gray-lighter;
+      border: 4px solid $gray-100;
       text-align: justify;
     }
   }
 
   .post-footer {
-    margin-top: $line-height-computed * 4;
-    padding-top: 10px;
+    margin-top: $spacer * 6;
+    padding: $spacer;
     font-weight: 100;
-    border: 2px solid $gray-lighter;
+    border: 2px solid $gray-400;
     text-align: center;
-    color: $gray-darker;
+    color: $gray-800;
   }
 }
 
@@ -162,94 +147,78 @@ hr {
 // Pages
 //****************************************
 
-// Home
-.about {
-  padding-top: $line-height-computed;
-  margin-top: $line-height-computed * 2;
-
-  .lead {
-    font-size: $font-size-large;
-  }
-}
-
 // Words
 .post-list {
-  padding-top: $line-height-computed;
-  margin-top: $line-height-computed;
+  padding-top: $spacer * 1.5;
+  margin-top: $spacer * 1.5;
 }
 
 .post {
   &.has-year {
-    margin-top: $line-height-computed;
+    margin-top: $spacer * 1.5;
   }
 
   .post-year {
-    margin-top: $line-height-computed / 2;
+    margin-top: $spacer * .75;
     color: hsl(215, 50%, 85%);
-    font-weight: 300;
-    font-size: $font-size-base + 2px; // 16px
+    font-weight: $font-weight-light;
+    font-size: $font-size-base;
   }
 
   .post-title {
-    margin-top: $line-height-computed / 2;
-    font-weight: 400;
-    font-size: $font-size-base + 2px; // 16px
+    margin-top: $spacer * .75;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
   }
-}
-
-// Projects
-.project-list {
-  padding-top: $line-height-computed;
-  margin-top: $line-height-computed;
 }
 
 .project {
   &.has-year {
-    margin-top: $line-height-computed;
+    margin-top: $spacer * 1.5;
   }
 
   .project-year {
-    margin-top: $line-height-computed / 2;
+    margin-top: $spacer * .75;
     color: hsl(215, 50%, 85%);
-    font-weight: 300;
-    font-size: $font-size-base + 2px; // 16px
+    font-weight: $font-weight-light;
+    font-size: $font-size-base;
   }
 
   .project-title {
-    margin-top: $line-height-computed / 2;
-    font-weight: 400;
-    font-size: $font-size-base + 2px; // 16px
+    margin-top: $spacer * .75;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
   }
 
   .project-description {
     color: hsl(215, 50%, 95%);
-    font-weight: 300;
+    font-weight: $font-weight-light;
   }
 }
 
 // Sounds
 .sound-list {
-  padding-top: $line-height-computed;
-  margin-top: $line-height-computed;
+  padding-top: $spacer * 1.5;
+  margin-top: $spacer * 1.5;
 }
 
 .sound {
-  margin-bottom: $line-height-computed;
-  padding-bottom: $line-height-computed;
+  margin-bottom: $spacer * 1.5;
+  padding-bottom: $spacer * 1.5;
 
   &.has-year {
-    margin-top: $line-height-computed;
+    margin-top: $spacer * 1.5;
   }
 
   .sound-year {
-    margin-top: $line-height-computed / 2;
+    margin-top: $spacer * .75;
     color: hsl(215, 50%, 85%);
-    font-weight: 300;
-    font-size: $font-size-base + 2px; // 16px
+    font-weight: $font-weight-light;
+    font-size: $font-size-base;
 
-    @media (max-width: $screen-sm-max) {
-      padding-left: 40px;
-    }
+    // @media (max-width: $screen-sm-max) {
+    //   padding-left: 40px;
+    // }
   }
 
   .sound-media {
@@ -261,34 +230,12 @@ hr {
   .sound-title {
     margin-top: 0;
     padding-left: 40px;
-    font-weight: 400;
-    font-size: $font-size-base + 2px; // 16px
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
   }
 
   .sound-tracks {
     color: hsl(215, 50%, 95%);
-    font-weight: 300;
+    font-weight: $font-weight-light;
   }
-}
-
-// Work
-.work-list {
-  padding-top: $line-height-computed;
-  margin-top: $line-height-computed;
-}
-
-
-
-// Components
-//****************************************
-
-// Bio
-.bio-container {}
-
-.bio {
-  position: fixed;
-  bottom: 0;
-  max-width: 400px;
-  margin-bottom: $line-height-computed * 2;
-  padding-right: 30px;
 }
