@@ -7,6 +7,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap": "4.3.0"
+    "bootstrap": "4.5"
   }
 }
