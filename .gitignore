@@ -1,5 +1,8 @@
 _site/
 .jekyll-cache
+.sass-cache
 bower_components/
 node_modules/
 .env
+
+.DS_Store
