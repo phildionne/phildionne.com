@@ -1,6 +1,7 @@
 {
   "name": "phildionne.com",
   "version": "1.0.0",
+  "packageManager": "pnpm@10.22.0",
   "main": "index.js",
   "repository": "git@github.com:phildionne/phildionne.com.git",
   "author": "Philippe Dionne <dionne.phil@gmail.com>",
