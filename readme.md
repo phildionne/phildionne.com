@@ -18,18 +18,21 @@ A curated selection of songs, delivered monthly
 
 This repo uses:
 
-- Ruby/Jekyll for the site
-- `pnpm` for frontend dependencies
+- [Eleventy (11ty)](https://www.11ty.dev/) for the site
+- `pnpm` for dependencies
+- `sass` to compile `css/styles.scss` to `_site/css/styles.css`
 
 Install dependencies:
 
 `pnpm install`
 
-`bundle install`
-
 Run the site locally:
 
-`bundle exec jekyll serve --livereload`
+`pnpm run dev`
+
+Build the site:
+
+`pnpm run build`
 
 ### Deploy
 

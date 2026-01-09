@@ -1,8 +1,10 @@
 _site/
 .jekyll-cache
 .sass-cache
+.bundle/
 bower_components/
 node_modules/
 .env
 
 .DS_Store
+pnpm-debug.log*

@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /atom.xml
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -15,13 +16,13 @@ layout: null
    <email>{{ site.author.email }}</email>
  </author>
 
- {% for post in site.posts %}
+ {% for post in collections.posts %}
  <entry>
-   <title>{{ post.title | xml_escape }}</title>
+   <title>{{ post.data.title | xml_escape }}</title>
    <link href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <id>{{ site.url }}{{ post.url }}</id>
+   <content type="html">{{ post.templateContent | xml_escape }}</content>
  </entry>
  {% endfor %}
 

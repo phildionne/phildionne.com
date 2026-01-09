@@ -1,24 +1,24 @@
 ---
-layout: default
+layout: default.html
 body_id: post
 ---
 
 <div class="container-fluid bg-white">
   <div class="row">
     <div class="col-lg-6 offset-lg-3">
-      {% include navigation.html %}
+      {% include "navigation.html" %}
 
       <section>
         <article class="post-content">
-          <time class="post-year">{{ page.date | date: "%B %-d, %Y" }}</time>
-          <h1 class="post-title">{{ page.title }}</h1>
+          <time class="post-year">{{ date | readable_date }}</time>
+          <h1 class="post-title">{{ title }}</h1>
 
           <div class="post-body">
-            {{ content | markdownify }}
+            {{ content }}
           </div>
 
           <footer class="post-footer">
-            {{ page.footer }}
+            {{ footer }}
           </footer>
         </article>
       </section>

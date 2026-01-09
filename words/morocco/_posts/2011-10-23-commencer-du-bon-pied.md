@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "Commencer du bon pied"
 categories: morocco

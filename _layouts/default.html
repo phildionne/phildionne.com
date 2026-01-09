@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="<%= locale %>">
+<html lang="{% if locale %}{{ locale }}{% else %}{{ site.locale }}{% endif %}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {% include meta.html %}
+    {% include "meta.html" %}
 
     {% if site.analytics_id %}
       <meta name="analytics-id" content="{{site.analytics_id}}" />
@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js" defer></script>
     <script src="{{ site.baseurl }}/javascripts/main.js" defer></script>
   </head>
-  <body id="{{ page.body_id }}">
+  <body id="{{ body_id }}">
     {{ content }}
   </body>
 </html>

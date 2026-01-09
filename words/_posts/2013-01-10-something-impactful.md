@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "Something impactful"
 year: 2012

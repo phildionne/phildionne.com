@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "Le Maroc a deux: Casablanca, Ouarzazate et Merzouga"
 categories: morocco

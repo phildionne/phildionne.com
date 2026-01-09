@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "Building & Learning"
 year: 2013

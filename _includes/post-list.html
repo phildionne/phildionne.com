@@ -1,7 +1,7 @@
 <section class="my-5">
-  {% for post in site.posts %}
-    {% if post.active %}
-      {% if post.year %}
+  {% for post in collections.posts %}
+    {% if post.data.active %}
+      {% if post.data.year %}
         <article class="post has-year">
       {% else %}
         <article class="post">
@@ -9,19 +9,19 @@
 
         <div class="row">
 
-          {% if post.year %}
+          {% if post.data.year %}
             <div class="col-3">
-              <h3 class="post-year">{{ post.year }}</h3>
+              <h3 class="post-year">{{ post.data.year }}</h3>
             </div>
           {% endif %}
 
-          {% if post.year %}
+          {% if post.data.year %}
             <div class="col-9">
           {% else %}
             <div class="col-9 offset-3">
           {% endif %}
             <h3 class="post-title">
-              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.data.title }}</a>
             </h3>
           </div>
 

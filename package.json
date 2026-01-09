@@ -7,7 +7,18 @@
   "author": "Philippe Dionne <dionne.phil@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build:css": "mkdir -p _site/css && sass --load-path=_sass css/styles.scss _site/css/styles.css",
+    "build": "pnpm run build:css && eleventy",
+    "dev:css": "mkdir -p _site/css && sass --load-path=_sass --watch css/styles.scss:_site/css/styles.css",
+    "dev": "concurrently -k \"pnpm run dev:css\" \"eleventy --serve\""
+  },
   "dependencies": {
     "bootstrap": "4.5"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "concurrently": "^9.2.1",
+    "sass": "^1.97.2"
   }
 }

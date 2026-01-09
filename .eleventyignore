@@ -1,0 +1,8 @@
+node_modules
+_site
+.jekyll-cache
+.sass-cache
+.bundle
+readme.md
+words/_posts/2021.md
+words/_posts/2022.md

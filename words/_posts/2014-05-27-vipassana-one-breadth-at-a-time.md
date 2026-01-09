@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "Vipassana: One breath at a time"
 year:

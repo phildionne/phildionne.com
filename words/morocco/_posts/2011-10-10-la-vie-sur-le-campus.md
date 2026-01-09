@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "La vie sur le campus"
 categories: morocco

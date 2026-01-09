@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "Alive and kicking"
 year: 2019
@@ -10,8 +10,9 @@ body_id: post
 locale: en
 ---
 
-> Confirmed. Cash is in the bank.
-{: class="blockquote" }
+<blockquote class="blockquote">
+  <p>Confirmed. Cash is in the bank.</p>
+</blockquote>
 
 That's how 2019 ended.
 

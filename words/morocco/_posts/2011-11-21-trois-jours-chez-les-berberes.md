@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "3 jours chez les berbères"
 categories: morocco

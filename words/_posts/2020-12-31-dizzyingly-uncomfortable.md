@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post.html
 active: true
 title: "Dizzyingly uncomfortable"
 year: 2020
